@@ -1,0 +1,137 @@
+﻿@* _NotificationPopup.cshtml *@
+
+<div id="notification-container" class="notification-container position-fixed p-3 top-0 end-0" role="region" aria-label="Notifiche">
+    <!-- Notifications will be dynamically inserted here -->
+</div>
+
+<!-- Sound effects (only loaded if enabled) -->
+<div class="d-none">
+    <audio id="notification-success-sound" preload="none">
+        <source src="https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="notification-error-sound" preload="none">
+        <source src="https://assets.mixkit.co/active_storage/sfx/2872/2872-preview.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="notification-info-sound" preload="none">
+        <source src="https://assets.mixkit.co/active_storage/sfx/2868/2868-preview.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="notification-warning-sound" preload="none">
+        <source src="https://assets.mixkit.co/active_storage/sfx/2867/2867-preview.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<script>
+    // NotificationService implementation
+    class NotificationService {
+      constructor(options = {}) {
+        this.container = document.getElementById('notification-container');
+        this.stackLimit = options.stackLimit || 5;
+        this.defaultDuration = options.defaultDuration || 5000;
+        this.soundEnabled = options.soundEnabled || false;
+        this.notifications = [];
+        this.counter = 0;
+      }
+
+      show({ title = '', message = '', type = 'info', duration = this.defaultDuration, playSound = this.soundEnabled, icon = '', onClose = null } = {}) {
+        if (!this.container) return null;
+
+        if (this.notifications.length >= this.stackLimit) {
+          const oldestId = this.notifications[0];
+          this.close(oldestId);
+        }
+
+        const id = `notification-${Date.now()}-${this.counter++}`;
+        let iconClass = icon || this.getIconClass(type);
+        const notification = this.createNotification(id, title, message, type, iconClass);
+
+        this.container.appendChild(notification);
+        this.notifications.push(id);
+
+        if (playSound) this.playSound(type);
+        if (duration > 0) setTimeout(() => this.close(id), duration);
+
+        if (onClose) notification.addEventListener('close', onClose);
+
+        return id;
+      }
+
+      close(id) {
+        const notification = document.getElementById(id);
+        if (!notification) return;
+        notification.classList.add('hiding');
+        setTimeout(() => notification.remove(), 300);
+      }
+
+      playSound(type) {
+        if (!this.soundEnabled) return;
+        const soundId = `notification-${type}-sound`;
+        const sound = document.getElementById(soundId);
+        if (sound) {
+          sound.currentTime = 0;
+          sound.play();
+        }
+      }
+
+      getIconClass(type) {
+        const icons = {
+          success: 'bi-check-circle-fill',
+          error: 'bi-exclamation-triangle-fill',
+          warning: 'bi-exclamation-circle-fill',
+          info: 'bi-info-circle-fill'
+        };
+        return icons[type] || icons.info;
+      }
+
+      createNotification(id, title, message, type, iconClass) {
+        const notification = document.createElement('div');
+        notification.id = id;
+        notification.className = `notification notification-${type} alert alert-${this.getBootstrapClass(type)} d-flex align-items-center shadow-sm`;
+        notification.setAttribute('role', 'alert');
+        notification.setAttribute('aria-live', type === 'error' ? 'assertive' : 'polite');
+        notification.innerHTML = `
+          <div class="notification-icon me-2">
+            <i class="bi ${iconClass}"></i>
+          </div>
+          <div class="notification-content flex-grow-1">
+            ${title ? `<div class="notification-title fw-bold">${title}</div>` : ''}
+            <div class="notification-message">${message}</div>
+          </div>
+          <button type="button" class="btn-close notification-close" aria-label="Close"></button>
+        `;
+
+          const closeButton = notification.querySelector('.notification-close');
+          if (closeButton) {
+            closeButton.addEventListener('click', (e) => {
+              e.stopPropagation();
+              this.close(id);
+            });
+          }
+
+
+        notification.classList.add('show');
+        return notification;
+      }
+
+      getBootstrapClass(type) {
+        const classes = {
+          success: 'success',
+          error: 'danger',
+          warning: 'warning',
+          info: 'info'
+        };
+        return classes[type] || classes.info;
+      }
+    }
+
+    // Initialize NotificationService
+    const notificationService = new NotificationService({
+      stackLimit: 5,
+      defaultDuration: 5000,
+      soundEnabled: true
+    });
+
+
+    window.showNotification = (title, message, type = 'info') => {
+      notificationService.show({ title, message, type });
+    };
+</script>

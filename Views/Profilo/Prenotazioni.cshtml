@@ -1,0 +1,145 @@
+﻿    @model PrenotazioniViewModel
+@{
+  ViewData["Title"] = "Prenotazioni";
+
+  string getStatusClass(string status)
+  {
+    switch (status) {
+      case "prenotato": return "bg-warning";
+      case "consegnato": return "bg-success";
+      case "scaduto" : return "bg-danger";
+      default: return "";
+    }
+  }
+}
+
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <h5 class="mb-0">Le mie prenotazioni</h5>
+   <form class="d-flex gap-2" method="get" action="@Url.Action("Prenotazioni", "Profilo")">
+    <input id="search-input" class="form-control search-input me-2" type="search" name="searching" placeholder="Cerca la prenotazione" aria-label="Cerca" value="@Model.Filters.Searching">
+    <button id="search-button" class="btn btn-primary search-button" type="submit">
+      <i class="bi bi-search me-1"></i>
+    </button>
+   </form>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Cover</th>
+          <th>Titolo</th>
+          <th>ISBN</th>
+          <th>Autore/i</th>
+          <th>Data di prestito</th>
+          <th>Data di scadenza</th>
+          <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        @if (Model.Reservations == null || !Model.Reservations.Any() || Model.Error != null)
+        {
+          <tr>
+            <td colspan="7" class="text-center">               
+                <!-- Messaggio di errore -->
+                <div class="error-container">
+                  <i class="bi bi-exclamation-triangle-fill fs-1 text-danger mb-3"></i>
+                  <h3 class="text-danger">Errore</h3>
+                  <p>@Model.Error</p>
+                </div>
+              </td>
+          </tr>
+        }
+        else{
+          @foreach(var reservation in Model.Reservations){
+            <tr>
+                <td class="text-center">
+                  <img 
+                    src=@Model.Books.Find(book => book.Id.Equals(reservation.BookId)).ImagePath
+                    alt="Cover di @Model.Books.Find(book => book.Id.Equals(reservation.BookId)).Title"
+                    class="book-cover shadow-sm"
+                    width="200"
+                    height="50"
+                  />
+                </td>
+              <td>@Model.Books.Find(book => book.Id.Equals(reservation.BookId)).Title </td>
+              <td>@Model.Books.Find(book => book.Id.Equals(reservation.BookId)).Isbn </td>
+              <td>@(string.Join(",", Model.Books.Find(book => book.Id.Equals(reservation.BookId)).Authors))</td>
+              <td>@reservation.Register_Date.ToString("dd-MM-yyyy")</td>
+              <td>@reservation.Expire_Date.ToString("dd-MM-yyyy")</td>
+              <td>
+                <span class="badge
+                      @getStatusClass(reservation.Status)"
+                      status-badge`}>
+                  @reservation.Status
+                </span>
+              </td>
+            </tr>
+          }}
+        </tbody>
+      </table>
+    </div>
+    <nav aria-label="Book history pagination">
+      @if (Model.Pagination != null)
+      {
+        <partial name="Pagination" model=@Model.Pagination/>
+      }
+    </nav>
+  </div>
+</div>
+
+<style>
+  .status-badge {
+    transition: all 0.3s ease;
+    padding: 0.5em 1em;
+  }
+  
+  .table th {
+    cursor: pointer;
+  }
+  
+  .table th:hover {
+    background-color: #f8f9fa;
+  }
+</style>
+
+<script>
+  // Search functionality
+  const searchInput = document.getElementById('searchInput');
+  const tableRows = document.querySelectorAll('tbody tr');
+
+  searchInput?.addEventListener('input', (e) => {
+    const searchTerm = (e.target).value.toLowerCase();
+    
+    tableRows.forEach(row => {
+      const text = row.textContent?.toLowerCase() || '';
+      row.style.display = text.includes(searchTerm) ? '' : 'none';
+    });
+  });
+
+  // Export functionality
+  const exportBtn = document.getElementById('exportBtn');
+  
+  exportBtn?.addEventListener('click', () => {
+    const table = document.querySelector('table');
+    if (!table) return;
+
+    const rows = Array.from(table.querySelectorAll('tr'));
+    const csv = rows
+      .map(row => {
+        return Array.from(row.querySelectorAll('td,th'))
+          .map(cell => cell.textContent)
+          .join(',');
+      })
+      .join('\n');
+
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'book-history.csv';
+    a.click();
+    window.URL.revokeObjectURL(url);
+  });
+</script>

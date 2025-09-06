@@ -1,0 +1,215 @@
+﻿@using DocumentFormat.OpenXml.Office2010.ExcelAc
+@model CatalogViewModel
+@{
+    ViewData["ActivePage"] = "Catalogo";
+    ViewData["Title"] = "Catalogo";
+}
+
+<!-- Search Bar Section -->
+<section class="bg-light py-4 mb-4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="search-container">
+                    <form class="d-flex" method="get" action="@Url.Action("Catalogo", "Catalogo")">
+                        <input id="search-input" class="form-control search-input me-2" type="search" name="searching" placeholder="Cerca libri per titolo, autore o categoria..." aria-label="Cerca" value="@Model.Filters.Searching">
+                        <button id="search-button" class="btn btn-primary search-button" type="submit">
+                            <i class="bi bi-search me-1"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mb-4">Catalogo Libri</h1>
+        </div>
+    </div>
+
+    <div class="catalog-container">
+        <!-- Filters Sidebar -->
+        <div class="filters-sidebar">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="bi bi-funnel me-2"></i>Filtri</h5>
+                </div>
+                <div class="card-body">
+                    <!-- Filtro Categoria -->
+                    <form method="get" action="@Url.Action("Catalogo", "Catalogo")">
+                        <div class="mb-3">
+                            <label for="category-filter" class="form-label">Categoria</label>
+                            <select id="category-filter" class="form-select filter-dropdown" name="category">
+                                @if (string.IsNullOrEmpty(Model.Filters.Category))
+                                {
+                                    <option value="" selected>Tutte le categorie</option>
+                                }
+                                else
+                                {
+                                    <option value="">Tutte le categorie</option>
+                                }
+                                @foreach (var category in Librelia.Database.StaticValues.categoryBooks)
+                                {
+                                    if (Model.Filters.Category == category.Value)
+                                    {
+                                        <option value="@category.Value" selected>@category.Key</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@category.Value">@category.Key</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+
+                        <!-- Filtro Disponibilità -->
+                        <div class="mb-3">
+                            <label for="availability-filter" class="form-label">Disponibilità</label>
+                            <select id="availability-filter" class="form-select filter-dropdown" name="availability">
+                                @if (!string.IsNullOrEmpty(Model.Filters.Availability) && Model.Filters.Availability == "available")
+                                {
+                                    <option value="">Tutte</option>
+                                    <option value="available" selected>Disponibile</option>
+                                    <option value="unavailable">Non disponibile</option>
+                                }
+                                else if (!string.IsNullOrEmpty(Model.Filters.Availability) && Model.Filters.Availability == "unavailable")
+                                {
+                                    <option value="">Tutte</option>
+                                    <option value="available">Disponibile</option>
+                                    <option value="unavailable" selected>Non disponibile</option>
+                                }
+                                else
+                                {
+                                    <option value="" selected>Tutte</option>
+                                    <option value="available">Disponibile</option>
+                                    <option value="unavailable">Non disponibile</option>
+                                }
+                            </select>
+                        </div>
+
+                        <!-- Filtro Ordinamento -->
+                        <div class="mb-3">
+                            <label for="sort-by" class="form-label">Ordinamento</label>
+                            <select id="sort-by" class="form-select filter-dropdown" name="sort">
+                                <optgroup label="Titolo">
+                                    @if (Model.Filters.SortBy == "title" && Model.Filters.SortDirection == "asc")
+                                    {
+                                        <option value="title-asc" selected>Titolo (A-Z)</option>
+                                        <option value="title-desc">Titolo (Z-A)</option>
+                                    }
+                                    else if (Model.Filters.SortBy == "title" && Model.Filters.SortDirection == "desc")
+                                    {
+                                        <option value="title-asc">Titolo (A-Z)</option>
+                                        <option value="title-desc" selected>Titolo (Z-A)</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="title-asc" selected>Titolo (A-Z)</option>
+                                        <option value="title-desc">Titolo (Z-A)</option>
+                                    }
+                                </optgroup>
+                                <optgroup label="Autore">
+                                    @if (Model.Filters.SortBy == "authors" && Model.Filters.SortDirection == "asc")
+                                    {
+                                        <option value="authors-asc" selected>Autore (A-Z)</option>
+                                        <option value="authors-desc">Autore (Z-A)</option>
+                                    }
+                                    else if (Model.Filters.SortBy == "authors" && Model.Filters.SortDirection == "desc")
+                                    {
+                                        <option value="authors-asc">Autore (A-Z)</option>
+                                        <option value="authors-desc" selected>Autore (Z-A)</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="authors-asc">Autore (A-Z)</option>
+                                        <option value="authors-desc">Autore (Z-A)</option>
+                                    }
+                                </optgroup>
+                                <optgroup label="Anno">
+                                    @if (Model.Filters.SortBy == "year" && Model.Filters.SortDirection == "desc")
+                                    {
+                                        <option value="year-desc" selected>Anno (più recente)</option>
+                                        <option value="year-asc">Anno (più vecchio)</option>
+                                    }
+                                    else if (Model.Filters.SortBy == "year" && Model.Filters.SortDirection == "asc")
+                                    {
+                                        <option value="year-desc">Anno (più recente)</option>
+                                        <option value="year-asc" selected>Anno (più vecchio)</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="year-desc">Anno (più recente)</option>
+                                        <option value="year-asc">Anno (più vecchio)</option>
+                                    }
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 mt-3">
+                            <i class="bi bi-search me-1"></i> Applica filtri
+                        </button>
+                    </form>
+                    <!-- Bottone per reimpostare i filtri -->
+                    <form method="get" action="@Url.Action("Catalogo", "Catalogo")">
+                        <button id="reset-filters" class="btn btn-outline-secondary w-100 mt-3">
+                            <i class="bi bi-arrow-counterclockwise me-1"></i> Reimposta filtri
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            @if (!string.IsNullOrEmpty(Model.Error))
+            {
+                <!-- Messaggio di errore -->
+                <div class="error-container">
+                    <i class="bi bi-exclamation-triangle-fill fs-1 text-danger mb-3"></i>
+                    <h3 class="text-danger">Si è verificato un errore</h3>
+                    <p>@Model.Error</p>
+                    <button id="retry-button" class="btn btn-primary mt-3">
+                        <i class="bi bi-arrow-clockwise me-2"></i>Riprova
+                    </button>
+                </div>
+
+            }
+
+            @if (string.IsNullOrEmpty(Model.Error) && Model.Books != null && Model.Books.Any())
+            {
+                <div id="books-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    @{
+                        var listIsbn = new List<string>();
+                    }
+                    @foreach (var book in Model.Books)
+                    {
+
+   
+                            <partial name="BookCard" model="book"/>
+
+                        
+                    }
+                </div>
+            }
+
+            <!-- Messaggio in assenza di risultati -->
+            @if (string.IsNullOrEmpty(Model.Error) && (Model.Books == null || !Model.Books.Any()))
+            {
+                <div class="error-container">
+                    <i class="bi bi-exclamation-triangle-fill fs-1 text-danger mb-3"></i>
+                    <h3 class="text-danger">Errore durante la ricerca</h3>
+                    <p>@Model.Error</p>
+                </div>
+            }
+
+            <!-- Pagina per la paginazione -->
+            @if (string.IsNullOrEmpty(Model.Error) && Model.Books != null && Model.Books.Any())
+            {
+                <partial name="Pagination" model="Model.Pagination" />
+            }
+        </div>
+    </div>
+</div>

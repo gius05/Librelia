@@ -1,0 +1,246 @@
+﻿@{
+  if (TempData["Notification"] is Dictionary<string, string> notificationSent)
+  {
+    ViewData["Notification"] = notificationSent;
+  }
+}
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Librelia</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Librelia.styles.css" asp-append-version="true" />
+    <link rel="icon" href="~/image/books.png"/>
+    
+    <meta name="description" content="Librelia è la libreria dove le storie prendono vita. Scopri migliaia di titoli, eventi letterari e consigli di lettura personalizzati.">
+    <!-- Meta tag Open Graph -->
+    <meta property="og:title" content="Librelia – La Tua Libreria di Fiducia" />
+    <meta property="og:description" content="Scopri migliaia di titoli, eventi letterari e consigli di lettura su Librelia." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Librelia" />
+</head>
+<body>
+   <div id="app">
+     <div class="container-fluid p-0">
+       <!-- Main Navigation -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+         <div class="container">
+           <!-- Logo -->
+           <a class="navbar-brand d-flex align-items-center" asp-controller="Home" asp-action="Index">
+             <i class="bi bi-book text-primary fs-2 me-2"></i>
+             <span class="fw-bold">Librelia</span>
+           </a>
+            
+           <!-- Mobile Toggle Button -->
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" 
+                   aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+            
+           <!-- Navigation Links -->
+           <div class="collapse navbar-collapse" id="mainNavbar">
+             <ul class="navbar-nav mx-auto">
+               <li class="nav-item">
+                 <a class="nav-link @( ViewData["ActivePage"] == "Home" ? "active fw-bold" : "")"  asp-controller="Home" asp-action="Index">
+                   <i class="bi bi-house-door me-1"></i> Home
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link @( ViewData["ActivePage"] == "Catalogo" ? "active fw-bold" : "")" asp-controller="Catalogo" asp-action="Catalogo">
+                   <i class="bi bi-collection me-1"></i> Catalogo
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link @( ViewData["ActivePage"] == "Info" ? "active fw-bold" : "")" asp-controller="Home" asp-action="ChiSiamo">
+                   <i class="bi bi-info-circle me-1"></i> Chi Siamo
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link @( ViewData["ActivePage"] == "Contatti" ? "active fw-bold" : "")" asp-controller="Home" asp-action="Contatti">
+                   <i class="bi bi-envelope me-1"></i> Contatti
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link"  href="https://www.itirenatoelia.edu.it/">
+                   <i class="bi bi-pencil-square me-1"></i> Scuola
+                 </a>
+               </li>   
+             </ul>
+              
+             <!-- Auth Buttons -->
+             <partial name="AuthNavigation"/>
+           </div>
+         </div>
+       </nav>
+
+       <!-- Main Content -->
+       <main>
+         @RenderBody()
+       </main>
+
+       <!-- Footer -->
+       <footer class="bg-primary text-white py-4 mt-auto">
+         <div class="container">
+           <div class="row">
+             <div class="col-md-4">
+               <h5>Librelia</h5>
+               <p>Via Annunziatella, 55/c<br>80053 Castellammare di Stabia NA, Italia<br>Tel: 081 8717985</p>
+             </div>
+             <div class="col-md-4">
+               <h5>Orari di apertura</h5>
+               <p>Lunedì - Venerdì: 9:00 - 19:00<br>Sabato: 9:00 - 13:00<br>Domenica: Chiuso</p>
+             </div>
+             <div class="col-md-4">
+               <h5>Collegamenti</h5>
+               <ul class="list-unstyled">
+                 <li><a  asp-controller="Home" asp-action="Index" class="text-white">Home</a></li>
+                 <li><a  asp-controller="Catalogo" asp-action="Catalogo" class="text-white">Catalogo</a></li>
+                 <li><a  asp-controller="Home" asp-action="ChiSiamo" class="text-white">Chi Siamo</a></li>
+                 <li><a  asp-controller="Home" asp-action="Contatti" class="text-white">Contatti</a></li>
+                 <li><a href="https://www.itirenatoelia.edu.it/index.html" class="text-white">Scuola</a></li>
+                 <li><a asp-controller="Home" asp-action="Termini" class="text-white">Termini</a></li>
+                 <li><a asp-controller="Home" asp-action="Privacy" class="text-white">Privacy</a></li>
+
+               </ul>
+             </div>
+             <div class="col-md-4">
+               <h5>Progetto Realizzato dalla classe 5E ITI</h5>
+               <h6>Informatica - Anno scolastico 2023-2024</h6>
+               <h6></h6>
+               <ul class="list-unstyled">
+                 <li><a href="https://www.linkedin.com/in/giuseppe-lopindo-693445325/" class="text-white">Giuseppe Lopindo</a></li>
+                 <li><a href="https://www.linkedin.com/in/simone-esposito-19572b30b/" class="text-white">Simone Esposito</a></li>
+                 <li><a href="https://www.linkedin.com/in/luigi-d-esposito-784379333/" class="text-white">Luigi D'Esposito</a></li>
+
+               </ul>
+               <p>Con il cordinamento didattico dei docenti del dipartimento di Informatica</p>
+             </div>
+           </div>
+           <div class="row mt-3">
+             <div class="col-md-12 text-center">
+               <p class="mb-0">© @DateTime.Now.Year Librelia. Tutti i diritti riservati.</p>
+             </div>
+           </div>
+         </div>
+       </footer>
+     </div>
+     
+      <!-- Book Detail Modal -->
+     <div class="modal fade" id="bookDetailModal" tabindex="-1" aria-labelledby="bookDetailModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="bookDetailModalLabel">Dettagli Libro</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body" id="book-detail-content">
+             <!-- Book details will be loaded here -->
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+             <button type="button" class="btn btn-primary" id="reserve-book-btn">Prenota</button>
+           </div>
+         </div>
+       </div>
+     </div>
+     
+     <!-- Auth Required Modal -->
+      <div class="modal fade" id="authRequiredModal" tabindex="-1" aria-labelledby="authRequiredModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="authRequiredModalLabel">Accesso richiesto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-center mb-4">
+                <i class="bi bi-lock-fill text-warning display-1"></i>
+                <h4 class="mt-3">Accesso richiesto</h4>
+                <p>Per prenotare un libro devi effettuare l'accesso o registrarti.</p>
+              </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+              <a asp-controller="Auth" asp-action="Login" class="btn btn-primary">Accedi</a>
+              <a asp-controller="Auth" asp-action="Registrazione" class="btn btn-outline-primary">Registrati</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        @Html.Partial("_NotificationPopup")
+   </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+              import { authService } from "../services/authService";
+
+        // Initialize Bootstrap components
+        document.addEventListener('DOMContentLoaded', () => {
+          // Enable tooltips
+          const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+          tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+          });
+
+          // Fix for modal backdrop not being removed
+          document.addEventListener('hidden.bs.modal', function (event) {
+            // Remove any lingering backdrops
+            const backdrops = document.querySelectorAll('.modal-backdrop');
+            backdrops.forEach(backdrop => {
+              backdrop.remove();
+            });
+
+            // Remove modal-open class from body
+            document.body.classList.remove('modal-open');
+            document.body.style.overflow = '';
+            document.body.style.paddingRight = '';
+          }, false);
+
+          // Show/hide auth-required nav items based on auth state
+          const authRequiredNavItems = document.querySelectorAll('.auth-required-nav');
+
+          function updateAuthRequiredNavItems(isAuthenticated) {
+            authRequiredNavItems.forEach(item => {
+              if (isAuthenticated) {
+                item.classList.remove('d-none');
+              } else {
+                item.classList.add('d-none');
+              }
+            });
+          }
+
+          // Listen for auth state changes
+          document.addEventListener('authStateChanged', (event) => {
+            const customEvent = event;
+            updateAuthRequiredNavItems(customEvent.detail.isAuthenticated);
+          });
+
+          // Check initial auth state
+          const isAuthenticated = authService.isAuthenticated();
+          updateAuthRequiredNavItems(isAuthenticated);
+        });
+
+
+    </script>
+
+    @{
+        var notification = ViewData["Notification"] as Dictionary<string, string>;
+        if (notification != null)
+        {
+            <script>
+                window.showNotification('@notification["Title"]', '@notification["Message"]', '@notification["Type"]');
+            </script>
+        }
+    }
+
+</body>
+</html>

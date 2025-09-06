@@ -1,0 +1,375 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navigation Styles */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: var(--bs-primary);
+    }
+
+    .nav-link.active {
+        color: var(--bs-primary) !important;
+        border-bottom: 2px solid var(--bs-primary);
+    }
+
+/* Book Card Styles */
+.book-card {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+    .book-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.book-cover {
+    height: 250px;
+    object-fit: cover;
+}
+
+.book-available {
+    color: #198754;
+}
+
+.book-unavailable {
+    color: #dc3545;
+}
+
+.book-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-book-cover {
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.rating {
+    color: #ffc107;
+}
+
+.empty-star {
+    color: #e0e0e0;
+}
+
+.loading-spinner {
+    width: 3rem;
+    height: 3rem;
+}
+
+.error-container {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f8d7da;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #6c757d;
+}
+
+/* Catalog Page Specific */
+.catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filters-sidebar {
+    width: 100%;
+}
+
+.products-grid {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .filters-sidebar {
+        width: 25%;
+        padding-right: 1.5rem;
+    }
+
+    .products-grid {
+        width: 75%;
+    }
+}
+
+/* Fix for modal issues */
+.modal-open {
+    overflow: hidden;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+    .modal-backdrop.fade {
+        opacity: 0;
+    }
+
+    .modal-backdrop.show {
+        opacity: 0.5;
+    }
+
+/* Search Bar */
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-input {
+    border-radius: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-button {
+    border-radius: 50px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Booking Status Badges */
+.badge.status-active {
+    background-color: #0d6efd;
+}
+
+.badge.status-returned {
+    background-color: #198754;
+}
+
+.badge.status-overdue {
+    background-color: #dc3545;
+}
+
+/* Reservation Card */
+.reservation-card {
+    transition: transform 0.3s ease;
+}
+
+    .reservation-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.reservation-cover {
+    height: 150px;
+    object-fit: cover;
+}
+
+/* User Profile Dropdown */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease;
+}
+
+    .dropdown-item:hover {
+        background-color: rgba(13, 110, 253, 0.1);
+    }
+
+    .dropdown-item i {
+        width: 1.25rem;
+        text-align: center;
+    }
+
+.dropdown-header {
+    font-weight: 600;
+    color: #6c757d;
+}
+
+
+
+/* NOTIFICATION */
+/* Notification container styles */
+.notification-container {
+    z-index: 9999;
+    max-width: 100%;
+    width: 350px;
+    pointer-events: none; /* Allow clicks to pass through container */
+}
+
+/* Individual notification styles */
+.notification {
+    margin-bottom: 0.75rem;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.3s ease-in-out;
+    pointer-events: auto; /* Re-enable pointer events for notifications */
+    overflow: hidden;
+    border-left-width: 4px;
+}
+
+    /* Entrance animation */
+    .notification.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Exit animation */
+    .notification.hiding {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+/* Type-specific styles */
+.notification-success {
+    border-color: #198754;
+}
+
+.notification-error {
+    border-color: #dc3545;
+}
+
+.notification-warning {
+    border-color: #ffc107;
+}
+
+.notification-info {
+    border-color: #0dcaf0;
+}
+
+/* Icon styles */
+.notification-icon {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .notification-container {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .notification {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+/* Accessibility focus styles */
+.notification:focus {
+    outline: 2px solid #0d6efd;
+    outline-offset: 2px;
+}
+
+/* Custom animations for different positions */
+.notification-container.top-right .notification,
+.notification-container.bottom-right .notification {
+    transform: translateX(20px);
+}
+
+.notification-container.top-left .notification,
+.notification-container.bottom-left .notification {
+    transform: translateX(-20px);
+}
+
+.notification-container.top-center .notification,
+.notification-container.bottom-center .notification {
+    transform: translateY(-20px);
+}
+
+    .notification-container.top-right .notification.show,
+    .notification-container.bottom-right .notification.show,
+    .notification-container.top-left .notification.show,
+    .notification-container.bottom-left .notification.show,
+    .notification-container.top-center .notification.show,
+    .notification-container.bottom-center .notification.show {
+        transform: translateX(0) translateY(0);
+    }
+
+/* Progress bar for auto-dismiss */
+.notification-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+
+.notification-progress-bar {
+    height: 100%;
+    width: 100%;
+    transform-origin: left;
+    animation: progress-bar-shrink linear forwards;
+}
+
+@keyframes progress-bar-shrink {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(0);
+    }
+}
+

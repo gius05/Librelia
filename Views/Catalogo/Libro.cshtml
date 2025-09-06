@@ -1,0 +1,139 @@
+﻿@using Librelia.Services
+@model Book
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@inject AuthService authService
+@{
+    ViewData["ActivePage"] = "Catalogo";
+
+    <link href="~/css/bookDetail.css" rel="stylesheet" />
+
+    var authService = new AuthService(HttpContextAccessor);
+    var isAuthenticated = authService.IsAuthenticated();
+    var currentUser = isAuthenticated ? authService.GetCurrentUser() : null;
+    var isAdmin = currentUser?.Role == "admin";
+
+    ViewData["Title"] = Model.Title;
+    var isAvailable = !Model.Reserved;
+}
+<div class="book-details p-4 m-3">
+  <div class="row g-4">
+    <!-- Book image column -->
+    <div class="col-md-4 mx-auto">
+      <div class="position-sticky" style="top: 2rem;">
+        <img
+          src=@Model.ImagePath
+          alt=@($"Cover di " + Model.Title)
+          class="img-fluid rounded "
+          loading="lazy"
+          width="400"
+          height="600"
+        />
+      </div>
+    </div>
+
+    <!-- Book details column -->
+    <div class="col-md-8">
+      <div class="card shadow-sm p-4">
+        <header>
+          <h1 class="display-4 mb-2">@Model.Title</h1>
+          <h2 class="h4 text-muted mb-4">@Model.Subtitle</h2>
+          
+          <div class="mb-4">
+            @foreach (var author in Model.Authors)
+            {
+              <span class="badge bg-primary me-2 p-2">@author</span>
+
+            }
+            
+          </div>
+        </header>
+
+        <section class="publishing-details mb-4" aria-label="Publishing Information">
+          <div class="card bg-light">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-4">
+                  <p class="mb-2"><strong>Casa Editrice:</strong><br />@Model.House</p>
+                </div>
+                <div class="col-sm-4">
+                  <p class="mb-2"><strong>Publicazione:</strong><br />@Model.Release</p>
+                </div>
+                <div class="col-sm-4">
+                  <p class="mb-2"><strong>ISBN:</strong><br />@Model.Isbn</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="categories mb-4" aria-label="Book Categories">
+          @foreach (var category in Model.Categories)
+          {
+            <span
+              class="category-tag badge bg-secondary text-decoration-none me-2 mb-2 p-2">
+              @category
+            </span>
+          }
+        </section>
+
+        <section class="description mb-4" aria-label="Book Description">
+          <h3 class="h5 mb-3">Descrizione:</h3>
+          <p class="lead">@Model.Description</p>
+        </section>
+
+        @if(isAdmin == true)
+        {
+          <section class="inventory mb-4" aria-label="Inventory Information">
+            <div class="card border-info">
+              <div class="card-header bg-info bg-opacity-10">
+                <h3 class="h5 mb-0">Inventory Information</h3>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <p class="mb-2">
+                      <strong>Location:</strong><br />
+                      @Model.Position
+                    </p>
+                  </div>
+                  <div class="col-sm-4">
+                    <p class="mb-2">
+                      <strong>Collocation:</strong><br />
+                      <code>@Model.Collocation</code>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        }
+
+        <section class="reservation text-center" aria-label="Book Reservation">
+          @if (isAvailable)
+          {
+            <form asp-controller="Catalogo" asp-action="Prenota" method="post">
+              <input type="hidden" name="id" value="@Model.Id" />
+              <input type="hidden" name="returnUrl" value="@Context.Request.Path@Context.Request.QueryString" />
+               <button
+                          class="reserve-button"
+                          aria-disabled=false>
+                        <i class="bi bi-calendar" aria-hidden="true"></i>
+                        Prenota ora
+               </button>
+            </form>
+          }
+          else
+          {
+            <button
+              class="reserve-button"
+              disabled=true
+              aria-disabled=true>
+              <i class="bi bi-calendar" aria-hidden="true"></i>
+              Non disponibile
+            </button>
+          }
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

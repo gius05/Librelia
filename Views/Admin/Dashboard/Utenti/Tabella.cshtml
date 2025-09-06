@@ -1,0 +1,83 @@
+﻿@model DataTableViewModel
+@{
+  
+  Layout = "~/Views/Shared/_AdminLayout.cshtml";
+  ViewData["Title"] = "Utenti";
+  ViewData["ActivePage"] = "Utenti";
+  var columns = new List<string> { "Nome", "Cognome", "Email", "Ruolo", "Verifica", "Posizione" };
+
+}
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+          <div class="d-flex justify-content-between mb-3">
+                <div class="d-flex gap-2 flex-grow-1">
+                <form method="get" class="d-flex" asp-action="TabellaUtenti">
+              <input id="search-input" class="form-control search-input me-2" type="search" name="searching" placeholder="Cerca utente" aria-label="Cerca" value="@Model.Pagination.Searching">
+              <button id="search-button" class="btn btn-primary search-button" type="submit">
+                <i class="bi bi-search me-1"></i>
+              </button>              
+            </form>
+            </div>
+          </div>
+        
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                @foreach(var column in columns){
+                  <th class="sortable" data-field=@column>
+                    @column
+                  </th>
+                }
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              @if(Model.Users == null){
+                <tr>
+                  <td colspan={columns.length + 1} class="text-center">No data available</td>
+                </tr>
+              }else{
+                @foreach (var user in Model.Users){
+                  <tr>
+                    <td>@user.Name</td>
+                    <td>@user.Surname</td>
+                    <td>@user.Email</td>
+                    <td>@user.Role</td>
+                    <td>@(user.Status == "verified" ? "Verificato" : user.Status == "banned" ? "Bannato" : "Non Verificato")</td>
+                    <td>@(user.External ? "Esterno" : "Interno")</td>
+                    <td>
+                      <a class="btn btn-sm btn-primary me-1" href="@Url.Action("ModificaUtente", "Admin", new { id = user.Id })">
+                        <i class="bi bi-pencil"></i>
+                      </a>                                                                                      @{/* server per il controller */}
+                      <a class="btn btn-sm btn-danger" href="@Url.Action("EliminaUtente", "Admin", new { id = user.Id, verified = true})">
+                        <i class="bi bi-trash"></i>
+                      </a>
+                    </td>
+                  </tr>
+                }
+              }
+            </tbody>
+          </table>
+        
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="text-muted">
+              Showing <span id="startEntry">@(Model.Pagination != null ? Model.Pagination.CurrentPage : 1)</span> to <span id="endEntry">@(Model.Pagination != null ? Model.Pagination.TotalPages : 1)</span> of <span id="totalEntries">@(Model.TotalItems)</span> entries
+            </div>
+            <nav>
+            <partial name="Pagination" model="Model.Pagination" />
+            </nav>
+          </div>
+        </div>
+        
+        <style>
+          .sortable {
+            cursor: pointer;
+          }
+          
+          .sortable:hover {
+            background-color: #f8f9fa;
+          }
+        </style>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+﻿@* Views/Shared/_BookCard.cshtml *@
+@model Book
+@{
+    var book = Model;  
+    var availabilityClass = !book.Reserved ? "book-available" : "book-unavailable";
+    var availabilityText = !book.Reserved ? "Disponibile" : "Non disponibile";
+    var availabilityBadge = !book.Reserved ?
+        "<span class='badge bg-success book-badge'>Disponibile</span>" :
+        "<span class='badge bg-danger book-badge'>Non disponibile</span>";
+
+    var author = book.Authors != null ? string.Join(",", book.Authors) : "";
+    var category = (book.Categories != null && book.Categories.Any()) ? string.Join(",", book.Categories) : "";
+
+}       
+
+<div class="col">
+    <div class="card book-card h-100">
+        @Html.Raw(availabilityBadge) <!-- Inject availability badge dynamically -->
+        <img src="@book.ImagePath" class="card-img-top book-cover" alt="@book.Title">
+        <div class="card-body">
+            <h4 class="card-title">@book.Title</h4>
+            <h5 class="card-subtitle">@(book.Subtitle != null ? book.Subtitle : "")</h5>
+            <h6 class="card-info mb-2 text-muted">@(@book.Release) @author - @book.House</h6>
+            <p class="card-text">@(book.Description != null ? $"{book.Description.Substring(0, book.Description.Length >= 40 ? 40 : book.Description.Length)}..." : "")</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="card-isbn">
+                    @book.Isbn
+                </div>
+                <span class="@availabilityClass">
+                    <i class="bi @(!book.Reserved ? "bi-check-circle" : "bi-x-circle")"></i> @availabilityText
+                </span>
+            </div>
+        </div>
+        <div class="card-footer">
+            <a  href="@Url.Action("Libro", "Catalogo", new { id = book.Id })" class="btn btn-primary w-100 view-details" data-book-id="@book.Id" data-category="@category">
+                Dettagli
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const button = document.querySelector(`.view-details[data-book-id='@book.Id']`);
+      if (button) {
+        button.addEventListener('click', () => {
+          // Dispatch custom event with book data
+          const event = new CustomEvent('showBookDetails', { detail: @Html.Raw(Json.Serialize(book)) });
+          document.dispatchEvent(event);
+        });
+      }
+    });
+</script>

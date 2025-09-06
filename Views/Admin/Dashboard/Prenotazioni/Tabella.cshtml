@@ -1,0 +1,151 @@
+﻿@model DataTableViewModel
+@{
+
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Prenotazioni";
+    ViewData["ActivePage"] = "Prenotazioni";
+    var columns = new List<string> { "Cover", "Titolo", "Editore", "ISBN", "Email", "Stato", "Data Prenotazione", "Data Scadenza" };
+
+    var status = new Dictionary<string, string>()
+    {
+        {"Prenotato", "prenotato"},
+        {"Scaduto", "scaduto"},
+        {"Consegnato", "consegnato"},
+    };
+
+}
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <div class="d-flex justify-content-between mb-3 flex-wrap gap-3">
+                <form method="get" class="d-flex" action="@Url.Action("TabellaPrenotazioni", "Admin")">
+                <div class="d-flex gap-2 flex-grow-1">
+                        <input id="search-input" class="form-control search-input " type="search" name="searching" placeholder="Cerca utente" aria-label="Cerca" value="@Model.Pagination.Searching">
+                        <button id="search-button" class="btn btn-primary search-button" type="submit">
+                            <i class="bi bi-search me-1"></i>
+                        </button>
+                 
+                </div>
+               <br/>
+                <div class="status-filter mx-2">
+                    <select  class="form-select" id="statusFilter" name="status">
+                        @if (string.IsNullOrEmpty(Model.Pagination.Status))
+                        {
+                            <option value="" selected>Tutti</option>
+                        }
+                        else
+                        {
+                            <option value="">Tutti</option>
+                        }
+
+                        @foreach(var choice in status)
+                        {
+                            if(Model.Pagination.Status != null && Model.Pagination.Status.Equals(choice.Value))
+                            {
+                                <option value="@choice.Value" selected>@choice.Key</option>
+                            }
+                            else
+                            {
+                                <option value="@choice.Value">@choice.Key</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <div class="date-filter-container d-flex gap-2 flex-wrap">
+                    <div class="btn-group">
+                        <input name="startDate" value="@(Model.Pagination.StartDate != null ? Model.Pagination.StartDate : "")" type="date" class="form-control" id="startDate" placeholder="Start Date">
+                        <input name="endDate" value="@(Model.Pagination.EndDate != null ? Model.Pagination.EndDate : "")"  type="date" class="form-control" id="endDate" placeholder="End Date">
+                    </div>
+                        <button class="btn btn-primary" id="resetFilters">
+                            <i class="bi  bi-search"></i> Applica Filtri
+                        </button>
+                    </div>
+                </form>
+                        <!-- Bottone per reimpostare i filtri -->
+                        <form method="get" action="@Url.Action("TabellaPrenotazioni", "Admin")">
+                            <button id="reset-filters" class="btn btn-outline-secondary w-100 mt-3">
+                                <i class="bi bi-arrow-counterclockwise me-1"></i> Reimposta filtri
+                            </button>
+                        </form>
+              
+       
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        @foreach (var column in columns)
+                        {
+                            <th class="sortable" data-field=@column>
+                                @column
+                            </th>
+                        }
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Reservations == null)
+                    {
+                        <tr>
+                            <td colspan={columns.length + 1} class="text-center">No data available</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (var reservation in Model.Reservations)
+                        {
+                            <tr>
+                                <td>                  
+                                    <img 
+                                    src=@Model.Books.Find(book => book.Id.Equals(reservation.BookId)).ImagePath
+                                    alt="Cover di @Model.Books.Find(book => book.Id.Equals(reservation.BookId)).Title"
+                                    class="book-cover shadow-sm"
+                                    width="60"
+                                    height="90"
+                                  />
+                                </td>
+                                <td>@Model.Books.Find(book => book.Id.Equals(reservation.BookId)).Title</td>
+                                <td>@Model.Books.Find(book => book.Id.Equals(reservation.BookId)).House</td>
+                                <td>@Model.Books.Find(book => book.Id.Equals(reservation.BookId)).Isbn</td>
+                                <td>@reservation.Email</td>
+                                <td>@(reservation.Status == "prenotato" ? "Prenotato" : reservation.Status == "scaduto" ? "Scaduto" : "Consegnato")</td>
+                                <td>@reservation.Register_Date.ToString("dd/MM/yyyy")</td>
+                                <td>@reservation.Expire_Date.ToString("dd/MM/yyyy")</td>
+                                <td>
+                                    @if(reservation.Status != "consegnato"){
+                                        <a class="btn btn-sm btn-primary me-1" href="@Url.Action("ModificaPrenotazione", "Admin", new { id = reservation.Id })">
+                                        <i class="bi bi-pencil"></i>
+                                        </a>
+                                    }
+                                   
+                                    <a class="btn btn-sm btn-danger" href="@Url.Action("EliminaPrenotazione", "Admin", new { id = reservation.Id })">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="text-muted">
+                    Showing <span id="startEntry">@(Model.Pagination != null ? Model.Pagination.CurrentPage : 1)</span> to <span id="endEntry">@(Model.Pagination != null ? Model.Pagination.TotalPages : 1)</span> of <span id="totalEntries">@(Model.TotalItems)</span> entries
+                </div>
+                <nav>
+                    <partial name="Pagination" model="Model.Pagination" />
+                </nav>
+            </div>
+        </div>
+
+        <style>
+            .sortable {
+                cursor: pointer;
+            }
+
+                .sortable:hover {
+                    background-color: #f8f9fa;
+                }
+        </style>
+    </div>
+</div>

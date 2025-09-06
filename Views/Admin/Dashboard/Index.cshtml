@@ -1,0 +1,89 @@
+﻿@{
+  Layout = "~/Views/Shared/_AdminLayout.cshtml";
+  ViewData["Title"] = "Home";
+  ViewData["ActivePage"] = "Home";
+  
+}
+
+  <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Utenti</h5>
+            <p class="card-text">Totale utenti registrati</p>
+            <h2>@(ViewBag.UsersCount)</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Libri</h5>
+            <p class="card-text">Totale libri nella libreria</p>
+            <h2>@(ViewBag.BooksCount)</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Prenotazioni</h5>
+            <p class="card-text">Prenotazioni Totali</p>
+            <h2>@(ViewBag.ResCount)</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--  <div class="col-md-6 mb-4">
+        <div class="card">
+      <div class="card-body">
+            <h5 class="card-title">Recent Activities</h5>
+            <div class="list-group list-group-flush">
+              <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h6 class="mb-1">New user registration</h6>
+                  <small>3 mins ago</small>
+                </div>
+                <p class="mb-1">John Doe registered a new account</p>
+              </div>
+              <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h6 class="mb-1">New book reservation</h6>
+                  <small>5 mins ago</small>
+                </div>
+                <p class="mb-1">Jane Smith reserved "The Great Gatsby"</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>-->
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">System Status</h5>
+            <div class="list-group list-group-flush">
+              <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h6 class="mb-1">Database</h6>
+                  <span class="badge bg-success">Online</span>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h6 class="mb-1">Sito</h6>
+                  <span class="badge bg-success">Online</span>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                  <h6 class="mb-1">Email Service</h6>
+                  <span class="badge bg-success">Online</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,183 @@
+﻿@{
+    ViewData["ActivePage"] = "Home";
+
+    ViewData["Title"] = "Home";
+    
+}
+
+<section class="hero-section">
+    <div class="container text-center">
+        <h1 class="hero-title">Benvenuti in Librelia</h1>
+        <p class="hero-subtitle">Scopri il piacere della lettura con la nostra vasta collezione di libri</p>
+        <div class="d-flex justify-content-center">
+            <a asp-controller="Catalogo" asp-action="Catalogo" class="btn btn-primary btn-lg me-3">Esplora il Catalogo</a>
+            <a asp-controller="Home" asp-action="ChiSiamo" class="btn btn-outline-secondary btn-lg">Scopri di Più</a>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Books Section -->
+<section class="container mb-5">
+    <div class="row">
+        <div class="col-12 text-center mb-4">
+            <h2>Libri in Evidenza</h2>
+            <p class="text-muted">Una selezione dei nostri libri più popolari</p>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Featured Book 1 -->
+        <div class="col">
+            <div class="card book-card h-100">
+                <span class="badge bg-primary book-badge">Novità</span>
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1000&auto=format&fit=crop" class="card-img-top book-cover" alt="Il Nome della Rosa">
+                <div class="card-body">
+                    <h5 class="card-title">Il Nome della Rosa</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Umberto Eco (1980)</h6>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="book-available">
+                            <i class="bi bi-check-circle"></i> Disponibile
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Catalogo" asp-action="Catalogo" class="btn btn-primary w-100">Dettagli</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Book 2 -->
+        <div class="col">
+            <div class="card book-card h-100">
+                <span class="badge bg-success book-badge">Consigliato</span>
+                <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?q=80&w=1000&auto=format&fit=crop" class="card-img-top book-cover" alt="La Divina Commedia">
+                <div class="card-body">
+                    <h5 class="card-title">La Divina Commedia</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Dante Alighieri (1320)</h6>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="book-available">
+                            <i class="bi bi-check-circle"></i> Disponibile
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Catalogo" asp-action="Catalogo" class="btn btn-primary w-100">Dettagli</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Book 3 -->
+        <div class="col">
+            <div class="card book-card h-100">
+                <span class="badge bg-info book-badge">Classico</span>
+                <img src="https://images.unsplash.com/photo-1495640452828-3df6795cf69b?q=80&w=1000&auto=format&fit=crop" class="card-img-top book-cover" alt="Il Gattopardo">
+                <div class="card-body">
+                    <h5 class="card-title">Il Gattopardo</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Giuseppe Tomasi di Lampedusa (1958)</h6>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="book-unavailable">
+                            <i class="bi bi-x-circle"></i> Non disponibile
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Catalogo" asp-action="Catalogo" class="btn btn-primary w-100">Dettagli</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Book 4 -->
+        <div class="col">
+            <div class="card book-card h-100">
+                <span class="badge bg-warning book-badge">Bestseller</span>
+                <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=1000&auto=format&fit=crop" class="card-img-top book-cover" alt="Breve Storia del Tempo">
+                <div class="card-body">
+                    <h5 class="card-title">Breve Storia del Tempo</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Stephen Hawking (1988)</h6>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="book-available">
+                            <i class="bi bi-check-circle"></i> Disponibile
+                        </span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Catalogo" asp-action="Catalogo" class="btn btn-primary w-100">Dettagli</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a asp-controller="Catalogo" asp-action="Catalogo" class="btn btn-outline-primary">Vedi tutti i libri</a>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="bg-light py-5 mb-5">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col-12">
+                <h2>I Nostri Servizi</h2>
+                <p class="text-muted">Scopri tutto ciò che la nostra biblioteca ha da offrirti</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-md-4">
+                <div class="card border-0 bg-transparent h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-book fs-1 text-primary mb-3"></i>
+                        <h4>Prestito Libri</h4>
+                        <p>Prendi in prestito i tuoi libri preferiti dalla nostra vasta collezione. Registrati per accedere al servizio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-md-4">
+                <div class="card border-0 bg-transparent h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-laptop fs-1 text-primary mb-3"></i>
+                        <h4>Risorse Digitali</h4>
+                        <p>Accedi a e-book, audiolibri e risorse online direttamente dal tuo dispositivo, ovunque tu sia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-md-4">
+                <div class="card border-0 bg-transparent h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-calendar-event fs-1 text-primary mb-3"></i>
+                        <h4>Eventi Culturali</h4>
+                        <p>Partecipa ai nostri eventi culturali, presentazioni di libri e gruppi di lettura organizzati regolarmente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="container mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4 text-center">
+                    <h3>Iscriviti alla nostra Newsletter</h3>
+                    <p class="text-muted mb-4">Ricevi aggiornamenti sui nuovi arrivi e sugli eventi in programma</p>
+
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" placeholder="La tua email" required>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary w-100">Iscriviti</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

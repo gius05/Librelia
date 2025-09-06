@@ -1,0 +1,384 @@
+﻿@using Librelia.Utility
+@using Mapster
+@model AdminBookViewModel
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Nuovo Libro";
+}
+
+<h1 class="text-center mb-4">Aggiungi un Nuovo Libro</h1>
+
+<div class="mb-4">
+    <label for="bookSelector" class="form-label">Copia da libro esistente</label>
+    <select id="bookSelector" class="form-select custom-select" asp-items="@(await Librelia.Utility.Tools.ToSelectListItems(Model.Books))"></select>
+</div>
+
+<form asp-action="AggiungiLibro" method="post" class="needs-validation" novalidate>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <label asp-for="Book.Title" class="form-label">Titolo</label>
+            <input asp-for="Book.Title" class="form-control" required />
+            <div class="invalid-feedback">Inserisci il titolo</div>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Book.Subtitle" class="form-label">Sottotitolo (Opzionale)</label>
+            <input asp-for="Book.Subtitle" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label for="isbnSelect" class="form-label">Cerca o Inserisci ISBN</label>
+            <select id="isbnSelect" class="form-select"></select>
+            <input type="hidden" asp-for="Book.Isbn" id="isbnHidden" />
+            <div id="isbnError" class="text-danger mt-1" style="display: none;"></div>
+            
+            <!-- Aggiungi una label per mostrare l'ISBN selezionato -->
+            <label id="isbnLabel" class="form-label mt-2" style="font-weight: normal;">ISBN Selezionato: Nessuno</label>
+        </div>
+
+
+
+        <div class="col-md-6">
+            <label asp-for="Book.ImagePath" class="form-label">Immagine di Copertina (URL)</label>
+            <input asp-for="Book.ImagePath" class="form-control" />
+        </div>
+
+        <div class="col-12">
+            <label asp-for="Book.Description" class="form-label">Descrizione (Opzionale)</label>
+            <textarea asp-for="Book.Description" class="form-control" rows="3"></textarea>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Book.Release" class="form-label">Anno di Rilascio</label>
+            <input asp-for="Book.Release" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Book.Language" class="form-label">Lingua</label>
+            <input asp-for="Book.Language" class="form-control" />
+        </div>
+        <div class="col-md-6 form-group">
+            <label for="authorSelect">Autore/i</label>
+            <select id="authorSelect" asp-for="Book.Authors" asp-items="@(await Tools.ToSelectListItems(Model.Book.Authors))" multiple class="form-control">
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Book.House" class="form-label">Casa Editrice</label>
+            <input asp-for="Book.House" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Book.Collocation" class="form-label">Collocazione</label>
+            <input asp-for="Book.Collocation" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Book.Position" class="form-label">Posizione</label>
+            <input asp-for="Book.Position" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Book.Categories" class="form-label">Categorie</label>
+            <select id="categoriesSelect" asp-for="Book.Categories" asp-items="@Librelia.Database.StaticValues.categoryList" class="form-select" multiple></select>
+        </div>
+
+
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100">Salva Libro</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    
+
+
+    <script type="text/javascript">
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+
+        $(document).ready(function () {
+
+            $('#categoriesSelect').select2({
+                placeholder: "Seleziona una o più categorie...",
+                allowClear: true,
+                width: '100%'  // Stesso per le categorie
+            });
+            $('#authorSelect').select2({
+                placeholder: "Scrivi uno o più autori...",
+                tags: true, // permette di scrivere nuovi valori
+                width: '100%',
+                tokenSeparators: [','], // separa autori digitati con virgola
+                createTag: function (params) {
+                    let term = $.trim(params.term);
+                    if (term === '') {
+                        return null;
+                    }
+                    return {
+                        id: term,
+                        text: term,
+                        newTag: true
+                    };
+                }
+            });
+
+            // Quando selezioni un libro, carica i dati nel form    
+            $('#bookSelector').select2({
+                placeholder: "Copia da libro esistente...",
+                allowClear: true,
+                width: '100%'
+            }).on('select2:select', function (e) {
+                const bookId = e.params.data.id;
+            
+                $.get('/Catalogo/GetBookData?id=' + bookId, function (data) {
+                    $('[name="Book.Title"]').val(data.title || "");
+                    $('[name="Book.Subtitle"]').val(data.subtitle || "");
+                    $('[name="Book.Isbn"]').val(data.isbn || "");
+                    $('[name="Book.Release"]').val(data.release || "");
+                    $('[name="Book.House"]').val(data.house || "");
+                    $('[name="Book.Language"]').val(data.language || "");
+                    $('[name="Book.Description"]').val(data.description || "");
+                    $('[name="Book.ImagePath"]').val(data.imagePath || "");
+                    $('[name="Book.Position"]').val(data.position || "");
+                    $('[name="Book.Collocation"]').val(data.collocation || "");
+                    $('[name="Book.Reserved"]').prop('checked', data.reserved || false);
+            
+                    $('[name="Book.Categories"]').val(data.categories).trigger('change');
+            
+                    // AUTORI - aggiungi autori mancanti dinamicamente
+                    const newAuthors = data.authors || [];
+                    newAuthors.forEach(author => {
+                        if (!$('#authorSelect option[value="' + author + '"]').length) {
+                            const newOption = new Option(author, author, false, false);
+                            $('#authorSelect').append(newOption);
+                        }
+                    });
+                    $('#authorSelect').val(newAuthors).trigger('change');
+            
+                    // ISBN - aggiorna hidden e label
+                    const isbnValue = data.isbn || "";
+                    $('#isbnHidden').val(isbnValue);
+                    $('#isbnLabel').text(`ISBN Selezionato: ${isbnValue}`);
+            
+                    // Aggiungi anche l'opzione al select2 se non esiste
+                    const existingOption = $('#isbnSelect option[value="' + isbnValue + '"]');
+                    if (!existingOption.length) {
+                        const isbnOption = new Option(`[Copia Libro] ${isbnValue}`, isbnValue, true, true);
+                        $('#isbnSelect').append(isbnOption);
+                    }
+            
+                    $('#isbnSelect').val(isbnValue).trigger('change');
+                });
+            });
+
+
+
+
+
+           let lastSearched = "";
+            let allResults = [];
+
+            $('#isbnSelect').select2({
+            placeholder: "Inserisci ISBN...",
+            minimumInputLength: 10,
+            allowClear: true,
+            tags: true,
+            width: '100%',
+            createTag: function (params) {
+                return {
+                    id: `CUSTOM-${params.term}`,
+                    text: params.term,
+                    newOption: true
+                };
+            },
+            ajax: {
+                transport: function (params, success, failure) {
+                    const term = params.data.q?.trim();
+                    $('#isbnError').hide();
+
+                    // Reset del valore dell'ISBN al nuovo termine di ricerca
+                    if (!term || term.length < 10 || term === lastSearched) {
+                        success({ results: [] });
+                        return;
+                    }
+
+                    lastSearched = term;
+                    allResults = [];
+
+                    let completedRequests = 0;
+                    let failedRequests = 0;
+
+                    function checkAndReturnResults() {
+                        completedRequests++;
+                        if (completedRequests === 3) {
+                            if (allResults.length === 0) {
+                                $('#isbnError').text('Nessun risultato trovato. Puoi comunque inserire i dati manualmente.').show();
+                            }
+                            success({ results: allResults });
+                        }
+                    }
+                        // OpenLibrary
+                        $.ajax({
+                            url: `https://openlibrary.org/isbn/${term}.json`,
+                            method: 'GET'
+                        }).done(data => {
+                            const coverUrl = `https://covers.openlibrary.org/b/isbn/${term}-L.jpg`;
+
+                            // Verifica se la cover esiste davvero
+                            $.ajax({
+                                url: coverUrl,
+                                method: 'HEAD'
+                            }).done(() => {
+                                // Esiste: inseriscila
+                                allResults.push({
+                                    id: `OL-${term}`,
+                                    text: `[OpenLibrary] ${data.title || 'Senza titolo'}`,
+                                    data: {
+                                        title: data.title || '',
+                                        subtitle: data.subtitle || '',
+                                        release: data.publish_date || '',
+                                        house: (data.publishers && data.publishers[0]) || '',
+                                        language: (data.languages && data.languages[0]?.key?.replace('/languages/', '')) || '',
+                                        description: '',
+                                        imagePath: coverUrl
+                                    }
+                                });
+                            }).fail(() => {
+                                // Non esiste: inserisci tutto tranne la copertina
+                                allResults.push({
+                                    id: `OL-${term}`,
+                                    text: `[OpenLibrary] ${data.title || 'Senza titolo'} (senza copertina)`,
+                                    data: {
+                                        title: data.title || '',
+                                        subtitle: data.subtitle || '',
+                                        release: data.publish_date || '',
+                                        house: (data.publishers && data.publishers[0]) || '',
+                                        language: (data.languages && data.languages[0]?.key?.replace('/languages/', '')) || '',
+                                        description: '',
+                                        imagePath: ''
+                                    }
+                                });
+                            }).always(checkAndReturnResults);
+
+                        }).fail(err => {
+                            if (err.status === 429) {
+                                $('#isbnError').text('Limite di richieste OpenLibrary raggiunto. Riprova più tardi.').show();
+                            } else if (err.status === 404) {
+                                console.log('Libro non trovato su OpenLibrary.');
+                            }
+                            checkAndReturnResults();
+                        });
+
+
+                        // BookBrainz
+                        $.ajax({
+                            url: `https://api.bookbrainz.org/ws/record/isbn/${term}`,
+                            method: 'GET'
+                        }).done(response => {
+                            const book = response?.metadata?.book;
+                            if (book) {
+                                allResults.push({
+                                    id: `BB-${term}`,
+                                    text: `[BookBrainz] ${book.title}`,
+                                    data: {
+                                        title: book.title || '',
+                                        subtitle: book.subtitle || '',
+                                        release: book.publicationYear || '',
+                                        house: book.publisher || '',
+                                        language: book.language || '',
+                                        description: '',
+                                        imagePath: ''
+                                    }
+                                });
+                            }
+                        }).fail(err => {
+                            if (err.status === 429) {
+                                $('#isbnError').text('Limite di richieste BookBrainz raggiunto. Riprova più tardi.').show();
+                            }
+                        }).always(checkAndReturnResults);
+
+                        // Google Books
+                        $.ajax({
+                            url: `https://www.googleapis.com/books/v1/volumes?q=isbn:${term}`,
+                            method: 'GET'
+                        }).done(response => {
+                            if (response.totalItems > 0) {
+                                const info = response.items[0].volumeInfo;
+                                allResults.push({
+                                    id: `GB-${term}`,
+                                    text: `[GoogleBooks] ${info.title}`,
+                                    data: {
+                                        title: info.title || '',
+                                        subtitle: info.subtitle || '',
+                                        release: info.publishedDate?.substring(0, 4) || '',
+                                        house: info.publisher || '',
+                                        language: info.language || '',
+                                        description: info.description || '',
+                                        imagePath: info.imageLinks?.thumbnail || ''
+                                    }
+                                });
+                            }
+                        }).fail(err => {
+                            if (err.status === 429) {
+                                $('#isbnError').text('Limite di richieste Google Books raggiunto. Riprova più tardi.').show();
+                            }
+                        }).always(checkAndReturnResults);
+                    },
+                    processResults: function (data) {
+                        return data;
+                    }
+                }
+            });
+
+            function updateHiddenIsbn() {
+                const rawValue = $('#isbnSelect').val();
+                if (rawValue) {
+                    const cleanIsbn = rawValue.replace(/^(OL|BB|GB|CUSTOM)-/, '');
+                    $('#isbnHidden').val(cleanIsbn);
+                    $('#isbnLabel').text(`ISBN Selezionato: ${cleanIsbn }`);
+
+                } else {
+                    $('#isbnHidden').val('');
+                    $('#isbnLabel').text(`ISBN Selezionato: Nessuno`);
+
+                }
+            }
+
+            $('#isbnSelect').on('select2:select', function (e) {
+                const selectedData = e.params.data.data;
+                updateHiddenIsbn();
+
+                if (!selectedData) return;
+
+                $('[name="Book.Title"]').val(selectedData.title);
+                $('[name="Book.Subtitle"]').val(selectedData.subtitle);
+                $('[name="Book.Release"]').val(selectedData.release);
+                $('[name="Book.House"]').val(selectedData.house);
+                $('[name="Book.Language"]').val(selectedData.language);
+                $('[name="Book.Description"]').val(selectedData.description);
+                $('[name="Book.ImagePath"]').val(selectedData.imagePath);
+            });
+
+            $('#isbnSelect').on('select2:close', updateHiddenIsbn);
+        });
+
+    </script>
+
+}
+

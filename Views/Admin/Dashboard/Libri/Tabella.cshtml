@@ -1,0 +1,125 @@
+﻿@model DataTableViewModel
+@{
+
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Libri";
+    ViewData["ActivePage"] = "Libri";
+    var columns = new List<string>{
+        "Cover",
+        "Titolo",
+        "Sottotitolo",
+        "Descrizione",
+        "Isbn",
+        "Categoria/e",
+        "Editore",
+        "Lingua",
+        "Pubblicazione",
+        "Autore/i",
+        "Disponibilitá",
+        "Posizione",
+        "Collocazione"
+    };
+
+
+}
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <div class="d-flex justify-content-between mb-3 flex-wrap gap-3">
+                <form method="get" class="d-flex" action="@Url.Action("TabellaLibri", "Admin")">
+                    <div class="d-flex gap-2 flex-grow-1">
+                        <input id="search-input" class="form-control search-input " type="search" name="searching" placeholder="Cerca Libro" aria-label="Cerca" value="@Model.Pagination.Searching">
+                        <button id="search-button" class="btn btn-primary search-button" type="submit">
+                            <i class="bi bi-search me-1"></i>
+                        </button>
+                 
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex gap-2 flex-grow">
+                <a id="search-button" class="btn btn-primary search-button" href="@Url.Action("AggiungiLibro", "Admin")">
+                    Aggiungi <i class="bi bi-plus me-1"></i>
+                </a>
+
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        @foreach (var column in columns)
+                        {
+                            <th class="sortable" data-field=@column>
+                                @column
+                            </th>
+                        }
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Books == null)
+                    {
+                        <tr>
+                            <td colspan={columns.length + 1} class="text-center">No data available</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (var book in Model.Books)
+                        {
+                            <tr>
+                                <td>                  
+                                    <img 
+                                    src=@book.ImagePath
+                                    alt="Cover di @book.Title"
+                                    class="book-cover shadow-sm"
+                                    width="60"
+                                    height="90"
+                                  />
+                                </td>
+                                <td>@book.Title</td>
+                                <td>@(book.Subtitle != null ? book.Subtitle : "")</td>
+                                <td>@(book.Description != null ? book.Description.Length >= 20 ? $"{book.Description.Substring(0, 20)}..." : book.Description : "")</td>
+                                <td>@(book.Isbn != null ? book.Isbn : "")</td>
+                                <td>@(string.Join(",", book.Categories))</td>
+                                <td>@book.House</td>
+                                <td>@book.Language</td>
+                                <td>@book.Release</td>
+                                <td>@(string.Join(",", book.Authors))</td>
+                                <td>@(book.Reserved ? "Prenotato" : "Disponibile")</td>
+                                <td>@book.Position</td>
+                                <td>@book.Collocation</td>
+                                <td>
+                                   <a class="btn btn-sm btn-primary me-1" href="@Url.Action("ModificaLibro", "Admin", new { id = book.Id })">
+                                       <i class="bi bi-pencil"></i>
+                                   </a>
+                                   
+                                    <a class="btn btn-sm btn-danger" href="@Url.Action("EliminaLibro", "Admin", new { id = book.Id })">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="text-muted">
+                    Showing <span id="startEntry">@(Model.Pagination != null ? Model.Pagination.CurrentPage : 1)</span> to <span id="endEntry">@(Model.Pagination != null ? Model.Pagination.TotalPages : 1)</span> of <span id="totalEntries">@(Model.TotalItems)</span> entries
+                </div>
+                <nav>
+                    <partial name="Pagination" model="Model.Pagination" />
+                </nav>
+            </div>
+        </div>
+
+        <style>
+            .sortable {
+                cursor: pointer;
+            }
+
+                .sortable:hover {
+                    background-color: #f8f9fa;
+                }
+        </style>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+﻿@using Librelia.Services
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@inject AuthService authService
+@using Librelia.Models
+
+@{
+    var authService = new AuthService(HttpContextAccessor);
+    var isAuthenticated = authService.IsAuthenticated();
+    var currentUser = isAuthenticated ? authService.GetCurrentUser() : null;
+    var isAdmin = currentUser?.Role == "admin";
+}
+
+<div id="auth-navigation" class="d-flex">
+    <!-- Guest Navigation (shown when not logged in) -->
+    @if (!isAuthenticated)
+    {
+        <div id="guest-nav">
+            <a asp-controller="Auth" asp-action="Login" class="btn btn-outline-primary me-2">Accedi</a>
+            <a asp-controller="Auth" asp-action="Registrazione" class="btn btn-primary">Registrati</a>
+        </div>
+    }
+    else
+    {
+        <!-- User Navigation (shown when logged in) -->
+        <div id="user-nav">
+            <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-circle me-1"></i>
+                    <span id="username-display">@currentUser?.Name @currentUser?.Surname</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                    <li><h6 class="dropdown-header">Account</h6></li>
+                    <li><a class="dropdown-item" asp-controller="Profilo" asp-action="Prenotazioni"><i class="bi bi-book me-2"></i>Le mie prenotazioni</a></li>
+                    @if (isAdmin)
+                    {
+                        <li>
+                            <a class="dropdown-item" asp-controller="Admin" asp-action="Index">
+                                <i class="bi bi-speedometer2 me-2"></i>Dashboard
+                            </a>
+                        </li>
+                    }
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <form method="post" asp-controller="Auth" asp-action="Logout">
+                            <button class="dropdown-item text-danger" type="submit">
+                                <i class="bi bi-box-arrow-right me-2"></i>Logout
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,151 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Modifica Utente";
+
+    var roles = new Dictionary<string, string>
+  {
+    { "Docente", "docente" },
+    { "Studente", "studente" },
+    { "Personale ATA", "ata" },
+    { "Admin", "admin" }
+  };
+}
+@model Librelia.DTO.UserDTO
+<h1 class="text-center mb-4">Modifica Utente</h1>
+
+<form asp-controller="Admin" asp-action="ModificaUtente" method="post" class="needs-validation" novalidate>
+    <div class="row g-4 ">
+        <input type="hidden" asp-for="Id" class="form-control" value="@Model.Id" readonly>
+
+        <div class="col-12 col-md-6">
+            <label for="status" class="form-label">Stato</label>
+            <select class="form-select" id="status" name="status" aria-label="Stato">
+                @if (Model.Status == "verified")
+                {
+                    <option value="verified" selected="">Verificato</option>
+                    <option value="banned">Bannato</option>
+                }
+                else
+                {
+                    <option value="not-verified" selected="">Non Verificato</option>
+                    <option value="banned">Bannato</option>
+                }
+            </select>
+
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-6">
+                <label for="name" class="form-label">Nome</label>
+                <input asp-for="Name"
+                       type="text"
+                       class="form-control"
+                       id="name"
+                       name="name"
+                       required
+                       aria-label="Name"
+                       value=@Model.Name>
+                <div class="invalid-feedback">
+                    Perfavore inserisci il nome
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <label for="surname" class="form-label">Cognome</label>
+                <input asp-for="Surname"
+                       type="text"
+                       class="form-control"
+                       id="surname"
+                       name="surname"
+                       required
+                       aria-label="Surname"
+                       value=@Model.Surname>
+                <div class="invalid-feedback">
+                    Perfavore inserisci il cognome
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input asp-for="Email"
+                       type="email"
+                       class="form-control"
+                       id="email"
+                       name="email"
+                       required
+                       aria-label="Email address"
+                       value=@Model.Email>
+                <div class="invalid-feedback">
+                    Perfavore inserisci un indirizzo email valido
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <label for="role" class="form-label">Ruolo</label>
+                <select asp-for="Role"
+                        class="form-select"
+                        id="role"
+                        name="role"
+                        required
+                        aria-label="Select role">
+                    @if (string.IsNullOrEmpty(Model.Role))
+                    {
+                        <option value="" selected>Seleziona un ruolo...</option>
+                    }
+                    else
+                    {
+                        <option value="">Seleziona un ruolo...</option>
+                    }
+                    @foreach (var role in roles)
+                    {
+                        if (role.Value.Equals(Model.Role))
+                        {
+                            <option value="@role.Value" selected>@role.Key</option>
+                        }
+                        else
+                        {
+                            <option value="@role.Value">@role.Key</option>
+                        }
+                    }
+                </select>
+                <div class="invalid-feedback">
+                    Perfavore selezione un ruolo
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <label for="verified" class="form-label">Focalizzazione</label>
+                <select asp-for="External" class="form-select" id="external" name="external" aria-label="External">
+                    <option value="true" selected="">Esterno</option>
+                    <option value="false">Interno</option>
+                </select>
+
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100">
+                    Modifica
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<script>
+    // Form validation script
+    document.addEventListener('DOMContentLoaded', function () {
+      const forms = document.querySelectorAll('.needs-validation');
+
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+
+          form.classList.add('was-validated');
+        }, false);
+      });
+    });
+</script>
+

@@ -1,0 +1,224 @@
+﻿  @{
+  ViewData["Title"] = "404 Not Found";
+  ViewData["Title"] = "Home";
+
+  <link href="~/css/404.css" rel="stylesheet" />
+}
+<div class="fantasy-404-container">
+  <!-- Particle effects container -->
+  <div id="particles-js" class="particles-container"></div>
+    
+  <!-- Floating objects -->
+  <div class="floating-objects">
+    <div class="floating-leaf leaf-1"></div>
+    <div class="floating-leaf leaf-2"></div>
+    <div class="floating-leaf leaf-3"></div>
+    <div class="floating-rune rune-1"></div>
+    <div class="floating-rune rune-2"></div>
+    <div class="floating-sparkle sparkle-1"></div>
+    <div class="floating-sparkle sparkle-2"></div>
+    <div class="floating-sparkle sparkle-3"></div>
+  </div>
+    
+  <!-- Main content -->
+  <div class="fantasy-content">
+    <div class="character-container">
+      <div class="wizard">
+        <div class="wizard-hat"></div>
+        <div class="wizard-face">
+          <div class="wizard-eyes">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+          </div>
+          <div class="wizard-beard"></div>
+        </div>
+        <div class="wizard-staff">
+          <div class="staff-orb"></div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="glowing-text-container">
+      <h1 class="glowing-text">404</h1>
+      <h2 class="glowing-text-sub">Pagina Non Trovata</h2>
+      <p class="fantasy-message">Il tomo che cerchi non esiste nella nostra biblioteca magica.</p>
+    </div>
+      
+    <div class="actions-container">
+      <a href="/" class="fantasy-button home-button">
+        <span class="button-text">Ritorna alla Biblioteca</span>
+        <span class="button-glow"></span>
+      </a>
+      <a asp-controller="Auth" asp-action="Registrazione" class="fantasy-button register-button">
+        <span class="button-text">Iscriviti alla Biblioteca</span>
+        <span class="button-glow"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize particles.js
+  if (typeof particlesJS !== 'undefined') {
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 2,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": false
+        },
+        "move": {
+          "enable": true,
+          "speed": 1,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "bubble"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "bubble": {
+            "distance": 150,
+            "size": 6,
+            "duration": 2,
+            "opacity": 0.8,
+            "speed": 3
+          },
+          "push": {
+            "particles_nb": 4
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  }
+  
+  // Make wizard eyes follow mouse
+  const eyes = document.querySelectorAll('.eye');
+  document.addEventListener('mousemove', (event) => {
+    eyes.forEach(eye => {
+      const eyeRect = eye.getBoundingClientRect();
+      const eyeCenterX = eyeRect.left + eyeRect.width / 2;
+      const eyeCenterY = eyeRect.top + eyeRect.height / 2;
+      
+      const mouseX = event.clientX;
+      const mouseY = event.clientY;
+      
+      const deltaX = mouseX - eyeCenterX;
+      const deltaY = mouseY - eyeCenterY;
+      
+      const angle = Math.atan2(deltaY, deltaX);
+      
+      const maxDistance = 3; // Maximum pixel distance the pupil can move
+      const distanceX = Math.cos(angle) * maxDistance;
+      const distanceY = Math.sin(angle) * maxDistance;
+      
+      eye.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
+    });
+  });
+  
+  // Parallax effect on scroll
+  window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    
+    // Apply parallax to different elements
+    document.querySelector('.floating-objects').style.transform = 
+      `translateY(${scrollPosition * 0.2}px)`;
+    
+    document.querySelector('.glowing-text').style.transform = 
+      `translateY(${scrollPosition * -0.1}px)`;
+  });
+  
+  // Staff orb pulsing animation
+  const staffOrb = document.querySelector('.staff-orb');
+  let pulseSize = 1;
+  let growing = true;
+  
+  function pulseAnimation() {
+    if (growing) {
+      pulseSize += 0.01;
+      if (pulseSize >= 1.1) growing = false;
+    } else {
+      pulseSize -= 0.01;
+      if (pulseSize <= 0.9) growing = true;
+    }
+    
+    staffOrb.style.transform = `scale(${pulseSize})`;
+    requestAnimationFrame(pulseAnimation);
+  }
+  
+  pulseAnimation();
+  
+  // Interactive floating objects
+  document.querySelectorAll('.floating-leaf, .floating-rune, .floating-sparkle').forEach(element => {
+    element.addEventListener('mouseover', () => {
+      element.style.transform = 'scale(1.2) rotate(10deg)';
+      element.style.filter = 'brightness(1.5)';
+    });
+    
+    element.addEventListener('mouseout', () => {
+      element.style.transform = '';
+      element.style.filter = '';
+    });
+  });
+});
+</script>

@@ -1,0 +1,4359 @@
+﻿[
+  {
+    "title": "100+1 frasi famose nella scienza",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Esplica",
+    "release": 2020,
+    "collocation": "D1",
+    "position": 22,
+    "reserverd": false
+  },
+  {
+    "title": "24 racconti",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Rinascita",
+    "release": 2020,
+    "collocation": "A2",
+    "position": 38,
+    "reserverd": false
+  },
+  {
+    "title": "Covid Le cento giornate di Napoli",
+    "imagePath": "http://books.google.com/books/content?id=9ExhEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "Il Covid-19 visto da angolazioni diverse, non sanitarie, ma che sono condivise dalla gente, benchè qui presentate in forma paludata e colta, a spiegazione del sentire comune. Utile per avviare una riflessione sulle conseguenze ad ampio raggio della pandemia sulla vita futura e non solo sulla salute e magari per avviare un cambiamento. Il testo può essere scaricato gratuitamente da qui: http://www.edarcipelago.com/perop/goc/covid19cs21.htm",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "Guida Editori",
+    "release": 2021,
+    "collocation": "D1",
+    "position": 11,
+    "reserverd": false
+  },
+  {
+    "title": "Crimini",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Einaudi",
+    "release": 2020,
+    "collocation": "E2",
+    "position": 15,
+    "reserverd": false
+  },
+  {
+    "title": "Fuori - Racconti per i ragazzi di Nisida",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Caracà",
+    "release": 2020,
+    "collocation": "D2",
+    "position": 39,
+    "reserverd": false
+  },
+  {
+    "title": "Fuori - Racconti per i ragazzi di Nisida",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Caracà",
+    "release": 2020,
+    "collocation": "E3",
+    "position": 44,
+    "reserverd": false
+  },
+  {
+    "title": "National Geographic - Argentina",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Unknown Publisher",
+    "release": 2020,
+    "collocation": "E3",
+    "position": 31,
+    "reserverd": false
+  },
+  {
+    "title": "Nessuno ci ridurrà al silenzio",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Centoautori",
+    "release": 2020,
+    "collocation": "D3",
+    "position": 28,
+    "reserverd": false
+  },
+  {
+    "title": "Nessuno ci ridurrà al silenzio",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Centoautori",
+    "release": 2020,
+    "collocation": "D3",
+    "position": 29,
+    "reserverd": false
+  },
+  {
+    "title": "Farse spagnole",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "D5",
+    "position": 20,
+    "reserverd": false
+  },
+  {
+    "title": "Giusto, Sbagliato, Dipende",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Mondadori",
+    "release": 2020,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "I grandi racconti del West",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "E4",
+    "position": 19,
+    "reserverd": false
+  },
+  {
+    "title": "Il grande teatro francese - Il Cid - Andromaca - Britannico",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Unknown Publisher",
+    "release": 2020,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Le serate di Medan - racconti di Emile Zola - Joris-Karl Huysmans - Henry Ceard - Leon Hennique - Paul Alexis e di Guy de Maupassant",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "D5",
+    "position": 10,
+    "reserverd": false
+  },
+  {
+    "title": "Moralisti e memorialisti francesi - La rochefoucaud - Cardinale De Retz - Saint Simon",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "D5",
+    "position": 28,
+    "reserverd": false
+  },
+  {
+    "title": "L'investigatore olistico Dirk Gentrly",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Duglas Adams"
+    ],
+    "house": "Feltrinelli",
+    "release": 2020,
+    "collocation": "A3",
+    "position": 29,
+    "reserverd": false
+  },
+  {
+    "title": "Io non ho paura",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Niccolò Ammaniti"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 2021,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Maria Mirela",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Gaetano Andrisani"
+    ],
+    "language": "it",
+    "house": "La Diana",
+    "release": 2003,
+    "collocation": "D1",
+    "position": 42,
+    "reserverd": false
+  },
+  {
+    "title": "La pelle di zigrino - La ricerca dell'assoluto",
+    "subtitle": "(La peau de chagrin) ; La ricerca dell'assoluto : (La recherche de l'absolu)",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Honoré De Balzac"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1969,
+    "collocation": "D5",
+    "position": 16,
+    "reserverd": false
+  },
+  {
+    "title": "Così possiamo difendere il nostro cuore",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Christiaan Barnard"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 1978,
+    "collocation": "D4",
+    "position": 37,
+    "reserverd": false
+  },
+  {
+    "title": "Lucullo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Vittorio E. Bravetta"
+    ],
+    "language": "it",
+    "house": "Dall'Oglio",
+    "release": 1938,
+    "collocation": "D4",
+    "position": 41,
+    "reserverd": false
+  },
+  {
+    "title": "Cielo cinese",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Pearls S. Buck"
+    ],
+    "house": "Mondadori",
+    "release": 2020,
+    "collocation": "A2",
+    "position": 34,
+    "reserverd": false
+  },
+  {
+    "title": "Progetto di sangue",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Grame Burnet"
+    ],
+    "house": "Neri pozza",
+    "release": 2020,
+    "collocation": "B3",
+    "position": 27,
+    "reserverd": false
+  },
+  {
+    "title": "Il sud del Mondo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Gianpaolo Calchi"
+    ],
+    "house": "Unknown Publisher",
+    "release": 2020,
+    "collocation": "D2",
+    "position": 22,
+    "reserverd": false
+  },
+  {
+    "title": "Il sud del mondo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Gianpaolo Calchi Novati"
+    ],
+    "house": "Fondazione Boroli",
+    "release": 2020,
+    "collocation": "D2",
+    "position": 23,
+    "reserverd": false
+  },
+  {
+    "title": "Il sud del mondo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Gianpaolo Calchi Novati"
+    ],
+    "house": "Fondazione Boroli",
+    "release": 2020,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Il birraio di Peterson",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Andrea Camilleri"
+    ],
+    "house": "Sellerio",
+    "release": 2020,
+    "collocation": "A2",
+    "position": 40,
+    "reserverd": false
+  },
+  {
+    "title": "Giovanni Leone - La carriera di un presidente",
+    "subtitle": "la carriera di un presidente",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Camilla Cederna"
+    ],
+    "language": "it",
+    "house": "Feltrinelli",
+    "release": 1979,
+    "collocation": "E2",
+    "position": 28,
+    "reserverd": false
+  },
+  {
+    "title": "I primi casi Poirot",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Agata Christie"
+    ],
+    "house": "Mondadori",
+    "release": 2020,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Geopolitica è",
+    "subtitle": "leggere il mondo per disegnare scenari futuri",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Alessandro Corneli"
+    ],
+    "language": "it",
+    "house": "Baroli",
+    "release": 2006,
+    "collocation": "D2",
+    "position": 27,
+    "reserverd": false
+  },
+  {
+    "title": "Oriente il grande ritorno",
+    "subtitle": "il grande ritorno",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Alessandro Corneli"
+    ],
+    "language": "it",
+    "house": "Baroli",
+    "release": 2008,
+    "collocation": "D1",
+    "position": 32,
+    "reserverd": false
+  },
+  {
+    "title": "Tutti i racconti",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Cronin Cronin"
+    ],
+    "language": "it",
+    "house": "Unknown Publisher",
+    "release": 2002,
+    "collocation": "C2",
+    "position": 9,
+    "reserverd": false
+  },
+  {
+    "title": "La valle degli uomini silenziosi",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "J. Oliver Curwood"
+    ],
+    "house": "Sonzogno",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 46,
+    "reserverd": false
+  },
+  {
+    "title": "Siamo ragazzi",
+    "subtitle": "primo: integrazione",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Liliana D'Angelo"
+    ],
+    "language": "it",
+    "house": "Unknown Publisher",
+    "release": 2001,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Autobiografia",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Charles Darwin"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 1950,
+    "collocation": "A4",
+    "position": 40,
+    "reserverd": false
+  },
+  {
+    "title": "Donne sull'orlo della crisi economica",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "undefined D'Ascenzo Vercelli"
+    ],
+    "house": "Unknown Publisher",
+    "release": 2020,
+    "collocation": "D2",
+    "position": 13,
+    "reserverd": false
+  },
+  {
+    "title": "Raffaele",
+    "imagePath": "http://books.google.com/books/content?id=yOUcAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Luciano De Crescenzo"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 1989,
+    "collocation": "E3",
+    "position": 27,
+    "reserverd": false
+  },
+  {
+    "title": "Nessuno ci ridurrà al silenzio",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Centoautori",
+    "release": 2020,
+    "collocation": "D3",
+    "position": 30,
+    "reserverd": false
+  },
+  {
+    "title": "Nessuno ci ridurrà al silenzio",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Centoautori",
+    "release": 2020,
+    "collocation": "D3",
+    "position": 31,
+    "reserverd": false
+  },
+  {
+    "title": "Souvenir",
+    "subtitle": "per i Bastardi di Pizzofalcone",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Maurizio De Giovanni"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 2017,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Energia e salute della Terra",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. De Leo, Fiorese, Guariso"
+    ],
+    "house": "Unknown Publisher",
+    "release": 2020,
+    "collocation": "D2",
+    "position": 25,
+    "reserverd": false
+  },
+  {
+    "title": "On the sea, Orizzonti senza approdo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Lea De Luna"
+    ],
+    "house": "Guanda",
+    "release": 2020,
+    "collocation": "B1",
+    "position": 1,
+    "reserverd": false
+  },
+  {
+    "title": "On the sea, Orizzonti senza approdo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Lea De Luna"
+    ],
+    "house": "Newton",
+    "release": 2020,
+    "collocation": "B1",
+    "position": 2,
+    "reserverd": false
+  },
+  {
+    "title": "On the sea, Orizzonti senza approdo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Lea De Luna"
+    ],
+    "house": "Einaudi",
+    "release": 2020,
+    "collocation": "B1",
+    "position": 3,
+    "reserverd": false
+  },
+  {
+    "title": "Il sogno dei miei vent'anni - raccolta poetica",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Biagio Di Meglio"
+    ],
+    "language": "it",
+    "house": "Lauretana",
+    "release": 1993,
+    "collocation": "D1",
+    "position": 12,
+    "reserverd": false
+  },
+  {
+    "title": "David Copperfield (II)",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Charles Dickens"
+    ],
+    "language": "en",
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "E4",
+    "position": 18,
+    "reserverd": false
+  },
+  {
+    "title": "Paddy Clarke ah ah ah",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Raddy Doyle"
+    ],
+    "house": "Guanda",
+    "release": 2020,
+    "collocation": "A2",
+    "position": 13,
+    "reserverd": false
+  },
+  {
+    "title": "LaRose",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Luise Erdrich"
+    ],
+    "house": "Feltrinelli",
+    "release": 2020,
+    "collocation": "A3",
+    "position": 26,
+    "reserverd": false
+  },
+  {
+    "title": "L'archivio di Abele",
+    "imagePath": "http://books.google.com/books/content?id=p1UdAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Antonio Faeti"
+    ],
+    "language": "it",
+    "house": "Sellerio",
+    "release": 1993,
+    "collocation": "A2",
+    "position": 42,
+    "reserverd": false
+  },
+  {
+    "title": "Lingua in rivoluzione",
+    "subtitle": "saggio",
+    "imagePath": "http://books.google.com/books/content?id=8Jk_AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Franco Fochi"
+    ],
+    "language": "it",
+    "house": "Feltrinelli",
+    "release": 1966,
+    "collocation": "D1",
+    "position": 45,
+    "reserverd": false
+  },
+  {
+    "title": "Le due morti di Socrate",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Ignacio Garcia-Valino"
+    ],
+    "house": "Sonzogno",
+    "release": 2020,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Incontri d'estate",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Giovanna  Righini Ricci"
+    ],
+    "language": "it",
+    "house": "Unknown Publisher",
+    "release": 1972,
+    "collocation": "E2",
+    "position": 23,
+    "reserverd": false
+  },
+  {
+    "title": "I dolori del giovane Werther - Le affinità elettive",
+    "subtitle": "Le affinità elettive ; Johann Wolfgang Goethe. [Curata dalla sezione letteraria del Club del libro. Trad. di Renato Ferrari. Introd. di Lavinia Mazzucchetti].",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Johann Wolfgang Goethe"
+    ],
+    "language": "de",
+    "house": "EDIPEM",
+    "release": 1960,
+    "collocation": "E4",
+    "position": 11,
+    "reserverd": false
+  },
+  {
+    "title": "Viaggio in Italia",
+    "imagePath": "http://books.google.com/books/content?id=MwnPHTtaMrYC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Johann Wolfgang Goethe"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1965,
+    "collocation": "E4",
+    "position": 3,
+    "reserverd": false
+  },
+  {
+    "title": "Ritorno a Salem",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Helene Grimaud"
+    ],
+    "house": "Bollati Boringhieri",
+    "release": 2020,
+    "collocation": "B2",
+    "position": 37,
+    "reserverd": false
+  },
+  {
+    "title": "L'antichissimo mondo di B.C.",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Johnny Hart"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 1979,
+    "collocation": "E3",
+    "position": 40,
+    "reserverd": false
+  },
+  {
+    "title": "Il vecchio e il mare",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Hernest Hemingway"
+    ],
+    "house": "Mondadori",
+    "release": 2020,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "I miserabili",
+    "subtitle": "Fantina",
+    "imagePath": "http://books.google.com/books/content?id=bh7_wy_om40C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Victor Hugo"
+    ],
+    "language": "it",
+    "house": "Bur",
+    "release": 1862,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "La Compagnia delle illusioni",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Entico Ianniello"
+    ],
+    "house": "Feltrinelli",
+    "release": 2020,
+    "collocation": "A4",
+    "position": 10,
+    "reserverd": false
+  },
+  {
+    "title": "Allegoria della giovinezza",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "VNicola Iovino"
+    ],
+    "house": "Isola d'Oro",
+    "release": 2020,
+    "collocation": "E2",
+    "position": 7,
+    "reserverd": false
+  },
+  {
+    "title": "Daisy Miller - Il carteggio Aspern - La tigre della giungla - La terza persona - L'angolo allegro",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Henry James"
+    ],
+    "language": "en",
+    "house": "EDIPEM",
+    "release": 1996,
+    "collocation": "E4",
+    "position": 15,
+    "reserverd": false
+  },
+  {
+    "title": "Il dolce cinema Fellini e altri",
+    "imagePath": "http://books.google.com/books/content?id=6KwqAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Tullio Kezich"
+    ],
+    "language": "it",
+    "house": "Unknown Publisher",
+    "release": 1978,
+    "collocation": "D4",
+    "position": 39,
+    "reserverd": false
+  },
+  {
+    "title": "I sommersi e i salvati",
+    "imagePath": "http://books.google.com/books/content?id=HZeRIv3tCSQC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "Quali sono le strutture gerarchiche di un sistema autoritario e quali le tecniche per annientare la personalità di un individuo? Quali rapporti si creano fra oppressori ed oppressi? Chi sono gli esseri che abitano la zona grigia \"della collaborazione\"? Come si costruisce un mostro? Era possibile capire dall'interno la logica della macchina dello sterminio? Era possibile ribellarsi? e come funziona la memoria di un'esperienza estrema? A questi interrogativi risponde questo libro di Levi sui lager nazisti. Annotation Supplied by Informazioni Editoriali",
+    "categories": [
+      "storia"
+    ],
+    "authors": [
+      "Primo Levi"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 1991,
+    "collocation": "D2",
+    "position": 29,
+    "reserverd": false
+  },
+  {
+    "title": "I sommersi e i salvati",
+    "imagePath": "http://books.google.com/books/content?id=HZeRIv3tCSQC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "Quali sono le strutture gerarchiche di un sistema autoritario e quali le tecniche per annientare la personalità di un individuo? Quali rapporti si creano fra oppressori ed oppressi? Chi sono gli esseri che abitano la zona grigia \"della collaborazione\"? Come si costruisce un mostro? Era possibile capire dall'interno la logica della macchina dello sterminio? Era possibile ribellarsi? e come funziona la memoria di un'esperienza estrema? A questi interrogativi risponde questo libro di Levi sui lager nazisti. Annotation Supplied by Informazioni Editoriali",
+    "categories": [
+      "storia"
+    ],
+    "authors": [
+      "Primo Levi"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 1991,
+    "collocation": "D2",
+    "position": 30,
+    "reserverd": false
+  },
+  {
+    "title": "Se questo è un uomo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Primo Levi"
+    ],
+    "language": "it",
+    "house": "Newton Compton",
+    "release": 1947,
+    "collocation": "B1",
+    "position": 34,
+    "reserverd": false
+  },
+  {
+    "title": "Se questo è un uomo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Primo Levi"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 1947,
+    "collocation": "B4",
+    "position": 2,
+    "reserverd": false
+  },
+  {
+    "title": "Indiana Jones e la danza dei giganti",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Bob Mac Gregor"
+    ],
+    "house": "Granata",
+    "release": 2020,
+    "collocation": "D2",
+    "position": 38,
+    "reserverd": false
+  },
+  {
+    "title": "Febbre nel Marais",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Leo Malet"
+    ],
+    "house": "Fazi editore",
+    "release": 2020,
+    "collocation": "C3",
+    "position": 39,
+    "reserverd": false
+  },
+  {
+    "title": "Una Barca nel bosco",
+    "imagePath": "http://books.google.com/books/content?id=uiddAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "Gaspare Torrente, figlio di un pescatore e aspirante latinista, approda a Torino da una piccola isola del Sud Italia. Un ragazzo come lui, che a tredici anni traduce Orazio e legge Verlaine, deve volare alto, fare il liceo e scordarsi il piccolo mondo senza tempo della propria infanzia. Ma la scuola superiore tradisce le sue aspettative: si trova alle prese con programmi flessibili, insegnanti incapaci e compagni «alla moda». Si sente sempre fuori tempo, fuori posto, come una barca nel bosco. E anche l'università, qualche anno dopo, non è da meno. Ma proprio quando tutto sembrerebbe perduto, la vita gli regala una svolta sbalorditiva, un riscatto etico ed estetico nei confronti di una società che riconosce solo i gregari e di un sistema scolastico che si rivela inadeguato a coltivare un talento. -- Page 2 of cover.",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Paola Mastrocola"
+    ],
+    "language": "it",
+    "house": "Bompiani",
+    "release": 2004,
+    "collocation": "B5",
+    "position": 5,
+    "reserverd": false
+  },
+  {
+    "title": "Uno strano luogo per morire",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "DebeK Miller"
+    ],
+    "house": "Neri pozza",
+    "release": 2020,
+    "collocation": "B2",
+    "position": 26,
+    "reserverd": false
+  },
+  {
+    "title": "Commedie Tartufo  - Il misantropo - L'avaro",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Molier Molier"
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "D5",
+    "position": 25,
+    "reserverd": false
+  },
+  {
+    "title": "Il volto nascosto",
+    "imagePath": "http://books.google.com/books/content?id=aLsqAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Giorgio Montefoschi"
+    ],
+    "language": "it",
+    "house": "Bompiani",
+    "release": 1991,
+    "collocation": "B3",
+    "position": 9,
+    "reserverd": false
+  },
+  {
+    "title": "Quaderni di mafia",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Adriana Musella"
+    ],
+    "house": "Riferimenti",
+    "release": 2020,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Pensieri - Le provinciali",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Blase Pascal"
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "D5",
+    "position": 23,
+    "reserverd": false
+  },
+  {
+    "title": "A Presto",
+    "imagePath": "http://books.google.com/books/content?id=-L8eAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "teatro"
+    ],
+    "authors": [
+      "Michele Perriera"
+    ],
+    "language": "it",
+    "house": "Sellerio",
+    "release": 2003,
+    "collocation": "A2",
+    "position": 41,
+    "reserverd": false
+  },
+  {
+    "title": "In viaggio",
+    "imagePath": "http://books.google.com/books/content?id=szFdAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "Tredici racconti di viaggio o sul viaggio come condizione dell'esistenza. Sono racconti \"on the road\", fatti di bagagli, alloggi provvisori, passaggi in autostop, incontri curiosi, animali, piante, souvenir. Fatti di intrigante autobiografia e di sottili riflessioni. Di continue domande. L'infanzia, la madre, il padre, i libri: è tutto un universo di rapporti, di emozioni, di formazioni che diventa, pagina dopo pagina, materia di meditazione e di autoanalisi. I ricordi dell'autrice trasportano il lettore dall'Argentina alla Cina, dall'India all'Australia, dal Canada a tutti i paesi europei in un errare incessante. In questo procedere, il viaggio è anche un libro di libri, un libro che interroga la dimensione del viaggio in altri autori.",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Fabrizia Ramondino"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 1995,
+    "collocation": "C3",
+    "position": 17,
+    "reserverd": false
+  },
+  {
+    "title": "Vivere è scegliere - Scritti di libertà",
+    "subtitle": "cronache di una conversione",
+    "imagePath": "http://books.google.com/books/content?id=RZyFAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Sergio Ricossa"
+    ],
+    "language": "it",
+    "house": "Baroli",
+    "release": 2000,
+    "collocation": "D1",
+    "position": 33,
+    "reserverd": false
+  },
+  {
+    "title": "Poesie: Nuove poesie - Elegie duinesi - Sonetti a Orfeo - Poesie sparse e ultime",
+    "subtitle": "Nuove poesie, Elegie duinesi, Sonetti a Orfeo, Poesie sparse e ultime",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Rainer Maria Rilke"
+    ],
+    "language": "de",
+    "house": "EDIPEM",
+    "release": 1973,
+    "collocation": "E4",
+    "position": 2,
+    "reserverd": false
+  },
+  {
+    "title": "Le Confessioni (I)",
+    "imagePath": "http://books.google.com/books/content?id=0wdkAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Jean-Jacques Rousseau"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1999,
+    "collocation": "D5",
+    "position": 14,
+    "reserverd": false
+  },
+  {
+    "title": "Le Confessioni (II)",
+    "imagePath": "http://books.google.com/books/content?id=0wdkAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Jean-Jacques Rousseau"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1999,
+    "collocation": "D5",
+    "position": 15,
+    "reserverd": false
+  },
+  {
+    "title": "I fuggitivi",
+    "imagePath": "http://books.google.com/books/content?id=BcMmAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "This award-winning novel covers the contemporary Roman scene of drug addicts, terrorists, and murderers.",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Nantas Salvalaggio"
+    ],
+    "language": "it",
+    "house": "Unknown Publisher",
+    "release": 1989,
+    "collocation": "E5",
+    "position": 26,
+    "reserverd": false
+  },
+  {
+    "title": "Teatro - Romeo e Giulietta - Il mercante di Vvenezia - Antonio e Cleopatra - La tempesta",
+    "subtitle": "Il mercante di Venezia ; Antonio e Cleopatra ; La tempesta",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "William Shakespeare"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1969,
+    "collocation": "E4",
+    "position": 8,
+    "reserverd": false
+  },
+  {
+    "title": "Teatro Amleto - Otello - Macbeth - Re Lear",
+    "subtitle": "Otello ; Macbeth ; Re Lear",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "William Shakespeare"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1969,
+    "collocation": "E4",
+    "position": 7,
+    "reserverd": false
+  },
+  {
+    "title": "Prevedere le crisi dell'età adulta",
+    "subtitle": "Predictable Crises of Adult Life",
+    "imagePath": "http://books.google.com/books/content?id=gDspAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "Identifies patterns of age-related change and compares the developmental rhythms of men and women, deepening understanding of the stresses experienced by couples during the various stages of adult life.",
+    "categories": [
+      "famiglia-e-relazioni"
+    ],
+    "authors": [
+      "Gail Sheeny"
+    ],
+    "language": "en",
+    "house": "Unknown Publisher",
+    "release": 1976,
+    "collocation": "E3",
+    "position": 12,
+    "reserverd": false
+  },
+  {
+    "title": "Pioggia nera",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Georges Simenon"
+    ],
+    "language": "it",
+    "house": "Adelphi",
+    "release": 2020,
+    "collocation": "D1",
+    "position": 38,
+    "reserverd": false
+  },
+  {
+    "title": "America primo amore",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Mario Soldati"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 1959,
+    "collocation": "A2",
+    "position": 11,
+    "reserverd": false
+  },
+  {
+    "title": "Pratiche d'amore",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Aleksander Tisma"
+    ],
+    "house": "Garzanti",
+    "release": 2020,
+    "collocation": "A2",
+    "position": 15,
+    "reserverd": false
+  },
+  {
+    "title": "I diari 1862 - 1910",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Sofija Andreevna Tolstoj"
+    ],
+    "house": "La Tartaruga",
+    "release": 1910,
+    "collocation": "A2",
+    "position": 10,
+    "reserverd": false
+  },
+  {
+    "title": "Jenny",
+    "subtitle": "Jenny and Other Works",
+    "imagePath": "http://books.google.com/books/content?id=6jO0AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "The collection includes the great novel Jenny, two short stories and selected letters.",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Sigrid Undset"
+    ],
+    "language": "en",
+    "house": "Nobel editrice",
+    "release": 2001,
+    "collocation": "E3",
+    "position": 29,
+    "reserverd": false
+  },
+  {
+    "title": "Torna coniglio",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "John Updke"
+    ],
+    "language": "it",
+    "house": "ClubEditori",
+    "release": 1972,
+    "collocation": "C3",
+    "position": 20,
+    "reserverd": false
+  },
+  {
+    "title": "Le due morti di Socrate",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Ignacio Valino"
+    ],
+    "house": "Sonzogno",
+    "release": 2020,
+    "collocation": "C2",
+    "position": 8,
+    "reserverd": false
+  },
+  {
+    "title": "Olive comprese",
+    "imagePath": "http://books.google.com/books/content?id=cEOSAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "Roman om livet i en lille italiensk by i 1930'erne og 1940'erne",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Andrea Vitali"
+    ],
+    "language": "it",
+    "house": "SuperPoket",
+    "release": 2006,
+    "collocation": "A2",
+    "position": 28,
+    "reserverd": false
+  },
+  {
+    "title": "La trappola",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Vernon Warren"
+    ],
+    "language": "it",
+    "house": "Ed. USA",
+    "release": 1959,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "I maggiordomi rapinano le banche",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Pelham Grenville Wodehouse"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 1977,
+    "collocation": "A2",
+    "position": 30,
+    "reserverd": false
+  },
+  {
+    "title": "Zio Fred in primavera",
+    "subtitle": "romanzo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Pelham Grenville Wodehouse"
+    ],
+    "language": "it",
+    "house": "Guanda",
+    "release": 1994,
+    "collocation": "B3",
+    "position": 21,
+    "reserverd": false
+  },
+  {
+    "title": "Teresa Raquin - Nantas - Nuove storielle a Ninetta",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Emile Zola"
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "D5",
+    "position": 30,
+    "reserverd": false
+  },
+  {
+    "title": "Il momento è delicato",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Niccolò Ammaniti"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 2021,
+    "collocation": "A3",
+    "position": 18,
+    "reserverd": false
+  },
+  {
+    "title": "Ti prendo e ti porto via",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Niccolò Ammaniti"
+    ],
+    "language": "it",
+    "house": "Gruppo L'Espresso",
+    "release": 2021,
+    "collocation": "C2",
+    "position": 11,
+    "reserverd": false
+  },
+  {
+    "title": "La disciplina di Penolope",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Giancarlo Carofiglio"
+    ],
+    "house": "Mondadori",
+    "release": 2020,
+    "collocation": "A2",
+    "position": 7,
+    "reserverd": false
+  },
+  {
+    "title": "La mazzetta",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Attilio Velardi"
+    ],
+    "house": "Rizzoli",
+    "release": 2020,
+    "collocation": "A2",
+    "position": 21,
+    "reserverd": false
+  },
+  {
+    "title": "Il Maggiore Brionne",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Louis L'Amour"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 1981,
+    "collocation": "C2",
+    "position": 31,
+    "reserverd": false
+  },
+  {
+    "title": "Sotto pressione",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=Fiction",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "David Baldacci"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 2004,
+    "collocation": "A2",
+    "position": 23,
+    "reserverd": false
+  },
+  {
+    "title": "Quel che rimane",
+    "subtitle": "traduzione di Anna Rusconi",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Patricia Cornwell"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 1999,
+    "collocation": "A2",
+    "position": 33,
+    "reserverd": false
+  },
+  {
+    "title": "La sirena",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Camilla Lackberg"
+    ],
+    "language": "it",
+    "house": "Marsilio",
+    "release": 2020,
+    "collocation": "A3",
+    "position": 33,
+    "reserverd": false
+  },
+  {
+    "title": "Mille anni che sto qui",
+    "subtitle": "A Novel",
+    "imagePath": "http://books.google.com/books/content?id=7_YqAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "In this sweeping work, Venezia portrays five generations of the Falcone family. Through their complicated, funny, tragic, and astonishing stories, Venezia also recounts a century and a half of Italy's tumultuous history.",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Mariolina Venezia"
+    ],
+    "language": "en",
+    "house": "Einaudi",
+    "release": 2009,
+    "collocation": "C3",
+    "position": 33,
+    "reserverd": false
+  },
+  {
+    "title": "Dinosauro eccellentissimo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Josè Cardoso Pires"
+    ],
+    "house": "Vertigo",
+    "release": 2020,
+    "collocation": "C3",
+    "position": 22,
+    "reserverd": false
+  },
+  {
+    "title": "Figuracce",
+    "subtitle": "Modelli e stili di relazione educativa",
+    "imagePath": "http://books.google.com/books/content?id=JXpsEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "Tre figure mitiche che mostrano tre modi di essere con se stessi e in relazione con gli altri e così rappresentano \"sguardi\" e voci narranti sul modo di essere esempi e maestri di vita. Chirone sostituto di altri nella relazione educativa per realizzare, in \"terra\", l'ordine deciso in \"cielo\" dagli Dei; Socrate \"filosofo dell'etica e dell'estetica\", maestro della sapienza di \"partire da sé\" per conoscere e far conoscere; Siddharta Gaitama della famiglia dei Sakaya, ovvero Buddha, lo Svegliato, sovrano dell'atemporalità, estraneo al mondo in cui vive, propugnatore della rinuncia a un'idea di progresso e di storia ineluttabile e incontrastabile. \"Chirone, Socrate, Buddha\" è una raccolta di scritti redatti da operatori professionisti impegnati, in vari contesti, nella relazione educativa con differenti tipologie di clienti che, a partire dall'agire quotidiano sul campo, tessono una riflessione relativa ai paradigmi della professione e alle implicazioni metodologiche e tecniche che ne derivano. Il testo si può scaricare gratuitamente da QUI: http://www.edarcipelago.com/perop/laveduc/chirsocbu.htm",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 2001,
+    "collocation": "C3",
+    "position": 5,
+    "reserverd": false
+  },
+  {
+    "title": "La vita alla finestra",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Andres Neuman"
+    ],
+    "house": "Einaudi",
+    "release": 2020,
+    "collocation": "B2",
+    "position": 7,
+    "reserverd": false
+  },
+  {
+    "title": "Io credo in colui che ha fatto il mondo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Antonio Zichicchi"
+    ],
+    "house": "Il Saggiatore",
+    "release": 2020,
+    "collocation": "A3",
+    "position": 9,
+    "reserverd": false
+  },
+  {
+    "title": "Io e te",
+    "imagePath": "http://books.google.com/books/content?id=1RMPIiSkqXAC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "\"Con una manciata di ingredienti Ammaniti construisce un racconto di fulminea precisione sul piú semplice e imperscrutabile dei misteri: come diventare grandi.\"--P. [4] of cover.",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Niccolò Ammaniti"
+    ],
+    "language": "it",
+    "house": "Einaudi Scuola",
+    "release": 2010,
+    "collocation": "B4",
+    "position": 44,
+    "reserverd": false
+  },
+  {
+    "title": "Antichi misteri",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Peter Haining"
+    ],
+    "language": "it",
+    "house": "Sperling & Kupfer",
+    "release": 1978,
+    "collocation": "D1",
+    "position": 41,
+    "reserverd": false
+  },
+  {
+    "title": "La Prova",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Beatrice Saubin"
+    ],
+    "house": "Rizzoli",
+    "release": 2020,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Mare della verità",
+    "imagePath": "http://books.google.com/books/content?id=jTRlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "Globetrotteren Lorenzo Telmari har trukket sig tilbage for at skrive en bog, men får en opringning fra sin broder, om at deres far er død. Pludselig er han indviklet i politiske intriger og en kærlighedshistorie",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Andrea De Carlo"
+    ],
+    "language": "it",
+    "house": "Bompiani",
+    "release": 2006,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "La spiaggia d'oro",
+    "imagePath": "http://books.google.com/books/content?id=HwJdAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Raffaello Brignetti"
+    ],
+    "language": "it",
+    "house": "Rizzoli",
+    "release": 1971,
+    "collocation": "C2",
+    "position": 17,
+    "reserverd": false
+  },
+  {
+    "title": "Il giudice di Berlino",
+    "subtitle": "l'esperienza di un magistrato in Parlamento",
+    "imagePath": "http://books.google.com/books/content?id=2t9BAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "legge"
+    ],
+    "authors": [
+      "Michele Del Gaudio"
+    ],
+    "language": "it",
+    "house": "Pironti",
+    "release": 1997,
+    "collocation": "C2",
+    "position": 20,
+    "reserverd": false
+  },
+  {
+    "title": "Energia e salute della Terra",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AAVV De Leo, Fiorese, Guariso"
+    ],
+    "house": "Unknown Publisher",
+    "release": 2020,
+    "collocation": "D2",
+    "position": 26,
+    "reserverd": false
+  },
+  {
+    "title": "L'Americana",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Goodrick Heddi"
+    ],
+    "house": "Unknown Publisher",
+    "release": 2020,
+    "collocation": "D2",
+    "position": 1,
+    "reserverd": false
+  },
+  {
+    "title": "Matematica per la vita",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Unknown Publisher",
+    "release": 2020,
+    "collocation": "D2",
+    "position": 24,
+    "reserverd": false
+  },
+  {
+    "title": "La magica medicina",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Rolad Dahl"
+    ],
+    "house": "Spagnol",
+    "release": 2020,
+    "collocation": "A4",
+    "position": 46,
+    "reserverd": false
+  },
+  {
+    "title": "Le streghe",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Rolad Dahl"
+    ],
+    "house": "Spagnol",
+    "release": 2020,
+    "collocation": "A4",
+    "position": 47,
+    "reserverd": false
+  },
+  {
+    "title": "Di là dal fiume e tra gli alberi",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Hernest Hemingway"
+    ],
+    "house": "Mondadori",
+    "release": 2020,
+    "collocation": "A4",
+    "position": 45,
+    "reserverd": false
+  },
+  {
+    "title": "La versione di Fenoglio",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Cianrico Carofiglio"
+    ],
+    "house": "Einaudi",
+    "release": 2020,
+    "collocation": "A4",
+    "position": 15,
+    "reserverd": false
+  },
+  {
+    "title": "Ahi! Ci sono",
+    "subtitle": "paradossi stimolanti e divertenti",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Martin Gardner"
+    ],
+    "language": "it",
+    "house": "Salani Editori",
+    "release": 1995,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Nel ventre",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Sergio Paolo Perroni"
+    ],
+    "house": "RBA Italia",
+    "release": 2020,
+    "collocation": "B1",
+    "position": 35,
+    "reserverd": false
+  },
+  {
+    "title": "On the sea, Orizzonti senza approdo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Lea De Luna"
+    ],
+    "house": "Loescher editore",
+    "release": 2020,
+    "collocation": "B1",
+    "position": 4,
+    "reserverd": false
+  },
+  {
+    "title": "Lettera a un Insegnante",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Vittorio Andreoli"
+    ],
+    "house": "Rizzoli",
+    "release": 2020,
+    "collocation": "B4",
+    "position": 56,
+    "reserverd": false
+  },
+  {
+    "title": "La Stampa addosso - Giancarlo Siani",
+    "subtitle": "Giancarlo Siani : la vera storia dell'inchiesta",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Armando D'Alterio"
+    ],
+    "language": "it",
+    "house": "La Repubblica",
+    "release": 2020,
+    "collocation": "B4",
+    "position": 35,
+    "reserverd": false
+  },
+  {
+    "title": "Tra i banchi",
+    "subtitle": "Appunti sulla decomposizione",
+    "imagePath": "http://books.google.com/books/content?id=kjVtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "La civilizzazione d’Occidente è all’imbrunire. La Storia del XXI secolo sarà fatta ad Oriente. Una civilizzazione durata quasi cinque secoli, fra glorie ed orrori, lascia il testimone. Il passaggio dal II al III millennio è una stretta soglia sulla quale siamo sospesi, ancora incerti sulla direzione da prendere. Questo libro è una piccola testimonianza della decomposizione dell’Occidente e della confusione di chi sosta su questa soglia. “Sospesi sulla Soglia” è il seguito ideale di “Aurora nera”, ed entrambi sono figli di “Detriti sul delta”. Tutti e tre i volumi sono stati realizzati da un piccolo gruppo di amici, reclusi volontariamente in una sorta di “monastero laico”. L’impero moderno di Occidente, nel suo declino, mette a rischio le migliaia di perle che ha prodotto e sta dimenticando. La legislazione insensata sul diritto d’autore sta facendo perdere le tracce di decine di scrittori “non più di moda”, che, scomparsi dai banchi delle librerie – anch’esse in via di sparizione –, sono reperibili solo in qualche biblioteca pubblica. Dove si può trovare oggi un libro di Sartre, di don Milani, di Freire o di Lacan? Fra i tesori in via di totale sparizione ci sono quasi tutti i testi delle scienze sociali: pedagogia, psicologia, sociologia e antropologia stanno diventando di interesse archeologico. Dove si possono comprare oggi i testi di Spaltro, Lai, Pagliarani, Carotenuto o De Marchi? Gli ordini monastici nacquero nel Medio Evo anche per salvare la cultura classica che si stava smarrendo. A loro dobbiamo la conoscenza di Aristotile, Platone, Seneca o Cicerone, salvati dalle invasioni barbariche. Il declino dell’impero moderno di Occidente richiede iniziative analoghe. Piccoli gruppi di studiosi isolati e separati dal mondo, con l’obiettivo di salvare e reinterpretare le scienze sociali della Modernità, per riconsegnarle, ancora vive, al IV millennio. Laici, perché non sono ispirati da alcun movente di fede ultraterrena, bensì solo da una terrenissima volontà di trasmettere ai pronipoti una scienza, una sapienza ed una saggezza a rischio di oblìo. Il gruppo degli autori del presente volume è qualcosa di simile. Un insieme di persone che dal 2000 ricerca, discute, pensa e scrive in una comunità isolata e remota. I capitoli del libro sono stati scritti nell’arco di 5 anni, dal 2005 al 2009. Per questo contengono alcuni cenni datati, che sono stati lasciati nella stesura finale, anche per testimoniare di una storia. Fra i capitoli ci sono anche temi ripresi più volte, e ciò si deve al fatto che gli autori appartengono ad un gruppo in continuo confronto, e si influenzano l’un l’altro. Se il senso della vita è per Kant “il valore che diamo alle cose in un certo luogo e in un certo momento”, questi autori danno un senso alla loro vita attribuendo valore al pensiero critico, creativo e, per questo, emarginato dei padri fondatori delle scienze sociali. Il volume può essere scaricato gratuitamente da QUI: http://www.edarcipelago.com/perop/immat/sossog.htm",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "L'Ancora",
+    "release": 2010,
+    "collocation": "B4",
+    "position": 34,
+    "reserverd": false
+  },
+  {
+    "title": "Napoli nessuna e centomila",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Biblioteca",
+    "release": 2020,
+    "collocation": "A4",
+    "position": 17,
+    "reserverd": false
+  },
+  {
+    "title": "C'era una volta un re… ma morì",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Einaudi",
+    "release": 2020,
+    "collocation": "A4",
+    "position": 34,
+    "reserverd": false
+  },
+  {
+    "title": "Un amore all'inferno",
+    "imagePath": "http://books.google.com/books/content?id=ljBlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Diego Cugia"
+    ],
+    "language": "it",
+    "house": "Repubblica",
+    "release": 2005,
+    "collocation": "B4",
+    "position": 39,
+    "reserverd": false
+  },
+  {
+    "title": "Uomini ai raggi x",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Pier Gildo Bianchi"
+    ],
+    "language": "it",
+    "house": "Bietti",
+    "release": 1971,
+    "collocation": "D1",
+    "position": 7,
+    "reserverd": false
+  },
+  {
+    "title": "L'ultima riga delle favole",
+    "imagePath": "http://books.google.com/books/content?id=nyI1AQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "Tomàs deve incontrarsi con Arianna, una ragazza che ha appena conosciuto a una conferenza intitolata Il peggiore dei mondi possibili, ma lei gli telefona e rinuncia all'appuntamento. Deluso, Tomàs si reca al mare, dove sul molo viene aggredito da un balordo e sta per annegare",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Massimo Gramellini"
+    ],
+    "language": "it",
+    "house": "TEA",
+    "release": 2010,
+    "collocation": "D1",
+    "position": 8,
+    "reserverd": false
+  },
+  {
+    "title": "Ubik",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Phiip Dick"
+    ],
+    "house": "Mondadori",
+    "release": 2020,
+    "collocation": "D1",
+    "position": 9,
+    "reserverd": false
+  },
+  {
+    "title": "Io e te",
+    "imagePath": "http://books.google.com/books/content?id=1RMPIiSkqXAC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "\"Con una manciata di ingredienti Ammaniti construisce un racconto di fulminea precisione sul piú semplice e imperscrutabile dei misteri: come diventare grandi.\"--P. [4] of cover.",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Niccolò Ammaniti"
+    ],
+    "language": "it",
+    "house": "Einaudi scuola",
+    "release": 2010,
+    "collocation": "D1",
+    "position": 23,
+    "reserverd": false
+  },
+  {
+    "title": "Il viaggio della vita",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "M Kushi"
+    ],
+    "house": "La finestra sul",
+    "release": 2020,
+    "collocation": "D1",
+    "position": 26,
+    "reserverd": false
+  },
+  {
+    "title": "Essere persona",
+    "subtitle": "idee per una antropologia metafisica",
+    "imagePath": "http://books.google.com/books/content?id=KCsuAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Virgilio Melchiorre"
+    ],
+    "language": "it",
+    "house": "Fondazione Boroli",
+    "release": 1982,
+    "collocation": "D1",
+    "position": 29,
+    "reserverd": false
+  },
+  {
+    "title": "Energia e salute della Terra",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AAVV De Leo, Fiorese, Guariso"
+    ],
+    "house": "Fondazione Boroli",
+    "release": 2020,
+    "collocation": "D1",
+    "position": 30,
+    "reserverd": false
+  },
+  {
+    "title": "Energia e salute della Terra",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AAVV De Leo, Fiorese, Guariso"
+    ],
+    "house": "Fondazione Boroli",
+    "release": 2020,
+    "collocation": "D1",
+    "position": 31,
+    "reserverd": false
+  },
+  {
+    "title": "Tre fedi un unico Dio",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Roberta Grillo"
+    ],
+    "language": "it",
+    "house": "Fondazione Boroli",
+    "release": 2004,
+    "collocation": "D1",
+    "position": 34,
+    "reserverd": false
+  },
+  {
+    "title": "Di Pietro, Giudice terremoto",
+    "subtitle": "l'uomo della speranza",
+    "imagePath": "http://books.google.com/books/content?id=z99BAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "legge"
+    ],
+    "authors": [
+      "Gigi Moncalvo"
+    ],
+    "language": "it",
+    "house": "Ed Club della Famiglia",
+    "release": 1992,
+    "collocation": "E2",
+    "position": 3,
+    "reserverd": false
+  },
+  {
+    "title": "Bulli con un click",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Roberto Bratti"
+    ],
+    "house": "Il Rubino",
+    "release": 2020,
+    "collocation": "E2",
+    "position": 16,
+    "reserverd": false
+  },
+  {
+    "title": "La Religione del mio tempo",
+    "subtitle": "La religione del mio tempo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Pier Paolo Pasolini"
+    ],
+    "language": "en",
+    "house": "Garzanti",
+    "release": 1976,
+    "collocation": "E2",
+    "position": 40,
+    "reserverd": false
+  },
+  {
+    "title": "Ragazzi di vita",
+    "imagePath": "http://books.google.com/books/content?id=JfoKAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "In una lettera che spedisce a Livio Garzanti, nel novembre del 1954, Pier Paolo Pasolini spiega con puntualità lo schema del romanzo che sta scrivendo: \"La mia poetica narrativa consiste nell'incatenare l'attenzione sui dati immediati. E questo mi è possibile perché questi dati immediati trovano la loro collocazione in una struttura o arco narrativo ideale che coincide poi col contenuto morale del romanzo. Tale struttura si potrebbe definire con la formula generale: l'arco del dopoguerra a Roma, dal caos pieno di speranze dei primi giorni della liberazione alla reazione del '50-51\". Chi legge solo oggi Ragazzi di vita si trova davanti una Roma completamente scomparsa e un'umanità, quella dei rudi \"borgatari\", di struggente tenerezza. Il benessere cresce intorno a questi \"regazzini\", insieme con la loro fame. Più tardi perfino la fame cambierà di segno, si trasformerà in nuovi bisogni fino ad allora sconosciuti. Il romanzo fu pubblicato da Livio Garzanti nel maggio del 1955, con notevole successo. Al di là del suo valore letterario e nonostante il puntiglioso lavoro di ripulitura dalle \"parolacce\" e dalle situazioni più scabrose, il libro fece grande scandalo...",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Pier Paolo Pasolini"
+    ],
+    "language": "it",
+    "house": "Garzanti",
+    "release": 1975,
+    "collocation": "E2",
+    "position": 41,
+    "reserverd": false
+  },
+  {
+    "title": "Le ceneri di Gramsci",
+    "subtitle": "Le ceneri di Gramsci",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Pier Paolo Pasolini"
+    ],
+    "language": "fr",
+    "house": "Garzanti",
+    "release": 1976,
+    "collocation": "E2",
+    "position": 42,
+    "reserverd": false
+  },
+  {
+    "title": "Poesie in forma di rosa",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Pier Paolo Pasolini"
+    ],
+    "language": "it",
+    "house": "Garzanti",
+    "release": 1964,
+    "collocation": "E2",
+    "position": 45,
+    "reserverd": false
+  },
+  {
+    "title": "Il sogno di una cosa",
+    "subtitle": "romanzo",
+    "imagePath": "http://books.google.com/books/content?id=g-JLAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Pier Paolo Pasolini"
+    ],
+    "language": "it",
+    "house": "Garzanti",
+    "release": 1962,
+    "collocation": "E2",
+    "position": 46,
+    "reserverd": false
+  },
+  {
+    "title": "Passione e ideologia",
+    "subtitle": "(1948-1958)",
+    "imagePath": "http://books.google.com/books/content?id=8BBdAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "poesia"
+    ],
+    "authors": [
+      "Pier Paolo Pasolini"
+    ],
+    "language": "it",
+    "house": "Garzanti",
+    "release": 1973,
+    "collocation": "E2",
+    "position": 47,
+    "reserverd": false
+  },
+  {
+    "title": "Indignazione",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Philip Roth"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 2018,
+    "collocation": "C4",
+    "position": 3,
+    "reserverd": false
+  },
+  {
+    "title": "Il professore di desiderio",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Philip Roth"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 2018,
+    "collocation": "C4",
+    "position": 4,
+    "reserverd": false
+  },
+  {
+    "title": "Nemesi",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Philip Roth"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 2018,
+    "collocation": "C4",
+    "position": 6,
+    "reserverd": false
+  },
+  {
+    "title": "Pastorale Americana",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Philip Roth"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 2018,
+    "collocation": "C4",
+    "position": 8,
+    "reserverd": false
+  },
+  {
+    "title": "L'animale morente",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Philip Roth"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 2018,
+    "collocation": "C4",
+    "position": 10,
+    "reserverd": false
+  },
+  {
+    "title": "Lamento di Portnoy",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Philip Roth"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 2018,
+    "collocation": "C4",
+    "position": 41,
+    "reserverd": false
+  },
+  {
+    "title": "Zuckerman scatenato",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Philip Roth"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 2018,
+    "collocation": "C4",
+    "position": 39,
+    "reserverd": false
+  },
+  {
+    "title": "Il nome della rosa",
+    "imagePath": "http://books.google.com/books/content?id=adkHAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Umberto Eco"
+    ],
+    "language": "it",
+    "house": "La Repubblica",
+    "release": 1980,
+    "collocation": "C4",
+    "position": 17,
+    "reserverd": false
+  },
+  {
+    "title": "Gli indifferenti",
+    "subtitle": "romanzo",
+    "imagePath": "http://books.google.com/books/content?id=Pc5EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Alberto Moravia"
+    ],
+    "language": "it",
+    "house": "La Repubblica",
+    "release": 1945,
+    "collocation": "C4",
+    "position": 14,
+    "reserverd": false
+  },
+  {
+    "title": "Morte improvvisa",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Alvaro Enrigue"
+    ],
+    "house": "Feltrinelli",
+    "release": 2020,
+    "collocation": "C4",
+    "position": 5,
+    "reserverd": false
+  },
+  {
+    "title": "Diario",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Anna Frank"
+    ],
+    "language": "en",
+    "house": "Enaudi",
+    "release": 1969,
+    "collocation": "C4",
+    "position": 42,
+    "reserverd": false
+  },
+  {
+    "title": "Il nome della rosa",
+    "imagePath": "http://books.google.com/books/content?id=adkHAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Umberto Eco"
+    ],
+    "language": "it",
+    "house": "La Repubblica",
+    "release": 1980,
+    "collocation": "E3",
+    "position": 25,
+    "reserverd": false
+  },
+  {
+    "title": "Abitare le Emozioni - Racconti di ragazzi",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Edizioni Mea",
+    "release": 2020,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "L'odore del sangue",
+    "subtitle": "romanzo",
+    "imagePath": "http://books.google.com/books/content?id=DDFdAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Goffredo Parise"
+    ],
+    "language": "it",
+    "house": "Bur",
+    "release": 1997,
+    "collocation": "E3",
+    "position": 30,
+    "reserverd": false
+  },
+  {
+    "title": "Storia evolutiva dell'uomo",
+    "subtitle": "l'adattamento dell'uomo all'ambiente attraverso l'evoluzione degli apparati",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Bernard Campbell"
+    ],
+    "language": "it",
+    "house": "Isedi",
+    "release": 1974,
+    "collocation": "E3",
+    "position": 1,
+    "reserverd": false
+  },
+  {
+    "title": "Donne senza volto",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Giulia Capece"
+    ],
+    "house": "Editore Sophia",
+    "release": 2020,
+    "collocation": "E3",
+    "position": 26,
+    "reserverd": false
+  },
+  {
+    "title": "I sogni aiutano a volare",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Pietro Sorrentino"
+    ],
+    "house": "Pace edizioni",
+    "release": 2020,
+    "collocation": "E3",
+    "position": 34,
+    "reserverd": false
+  },
+  {
+    "title": "I sogni aiutano a volare",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Pietro Sorrentino"
+    ],
+    "house": "Pace edizioni",
+    "release": 2020,
+    "collocation": "E3",
+    "position": 35,
+    "reserverd": false
+  },
+  {
+    "title": "I sogni aiutano a volare",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Pietro Sorrentino"
+    ],
+    "house": "Pace edizioni",
+    "release": 2020,
+    "collocation": "E3",
+    "position": 36,
+    "reserverd": false
+  },
+  {
+    "title": "I sogni aiutano a volare",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Pietro Sorrentino"
+    ],
+    "house": "Pace edizioni",
+    "release": 2020,
+    "collocation": "E3",
+    "position": 37,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 21,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 22,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 23,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 24,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 25,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 26,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 27,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 28,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 29,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 30,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 31,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 32,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 33,
+    "reserverd": false
+  },
+  {
+    "title": "La non scuola di Marco Martinelli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Francesco Saturnino"
+    ],
+    "house": "Luca Sossella ed",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 34,
+    "reserverd": false
+  },
+  {
+    "title": "I pionieri dell'ignoto",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Vietti Bignamini"
+    ],
+    "house": "Sergio bonelli",
+    "release": 2020,
+    "collocation": "",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Gli indifferenti",
+    "subtitle": "romanzo",
+    "imagePath": "http://books.google.com/books/content?id=Pc5EAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Alberto Moravia"
+    ],
+    "language": "it",
+    "house": "Bompiani",
+    "release": 1945,
+    "collocation": "D4",
+    "position": 35,
+    "reserverd": false
+  },
+  {
+    "title": "In quel preciso momento",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Dino Buzzati"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 1963,
+    "collocation": "D4",
+    "position": 16,
+    "reserverd": false
+  },
+  {
+    "title": "Via, con Seth…",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Luigia Sisella Coppola"
+    ],
+    "house": "Unknown Publisher",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 10,
+    "reserverd": false
+  },
+  {
+    "title": "La disciplina di Penolope",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Giancarlo Carofiglio"
+    ],
+    "house": "Mondadori",
+    "release": 2020,
+    "collocation": "D4",
+    "position": 36,
+    "reserverd": false
+  },
+  {
+    "title": "L'Aleph",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Jeorge Luis Borges"
+    ],
+    "house": "La Repubblica",
+    "release": 2020,
+    "collocation": "B5",
+    "position": 42,
+    "reserverd": false
+  },
+  {
+    "title": "Famiglia",
+    "imagePath": "http://books.google.com/books/content?id=V1ldAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Natalia Ginzburg"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 1977,
+    "collocation": "E5",
+    "position": 27,
+    "reserverd": false
+  },
+  {
+    "title": "Storie Fiorentine - Ricordi",
+    "subtitle": "Storie fiorentine. Dialogo del reggimento di Firenze. Ricordi e altri scritti / Francesco Guicciardini. A cura di Emanuella Lugnani Scarano",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Francesco Guicciardini"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1974,
+    "collocation": "D5",
+    "position": 2,
+    "reserverd": false
+  },
+  {
+    "title": "Poesie e prose",
+    "subtitle": "antologia di poesie e prose",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Giosuè Carducci"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1942,
+    "collocation": "D5",
+    "position": 3,
+    "reserverd": false
+  },
+  {
+    "title": "Canzoniere",
+    "imagePath": "http://books.google.com/books/content?id=xtYKV9BSqXIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Francesco Petrarca"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1883,
+    "collocation": "D5",
+    "position": 4,
+    "reserverd": false
+  },
+  {
+    "title": "Novelle italiane",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "D5",
+    "position": 7,
+    "reserverd": false
+  },
+  {
+    "title": "Ultime lettere di Jacopo Ortis - Scritti vari",
+    "subtitle": "Scritti vari",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Ugo Foscolo"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1977,
+    "collocation": "D5",
+    "position": 8,
+    "reserverd": false
+  },
+  {
+    "title": "Il grande teatro francese - Il Cid - Andromaca - Britannico",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "D5",
+    "position": 24,
+    "reserverd": false
+  },
+  {
+    "title": "Poesia d'amore turca e persiana",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV"
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "D5",
+    "position": 32,
+    "reserverd": false
+  },
+  {
+    "title": "Il fiore della letteratura malese e indonesiana",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "D5",
+    "position": 34,
+    "reserverd": false
+  },
+  {
+    "title": "Il Principe - Discorsi - La Mandragola - Belfagor",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Niccolò Machiavelli"
+    ],
+    "language": "en",
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "E4",
+    "position": 24,
+    "reserverd": false
+  },
+  {
+    "title": "Racconti della Scapigliatura  milanese",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "E4",
+    "position": 26,
+    "reserverd": false
+  },
+  {
+    "title": "Canti - Operette Morali - Pensieri",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Giacomo Leopardi"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1949,
+    "collocation": "E4",
+    "position": 27,
+    "reserverd": false
+  },
+  {
+    "title": "Orlando Furioso Canti I-XXIII",
+    "subtitle": "con una scelta di pagine sull'Ariosto. Canti I - XXIII",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Ludovico Ariosto"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1964,
+    "collocation": "E4",
+    "position": 28,
+    "reserverd": false
+  },
+  {
+    "title": "Orlando Furioso Canti XXIV-XLVI",
+    "subtitle": "con una scelta di pagine sull'Ariosto. Canti XXIV - XLVI",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Ludovico Ariosto"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1964,
+    "collocation": "E4",
+    "position": 29,
+    "reserverd": false
+  },
+  {
+    "title": "Pensieri e azioni nel Risorgimento",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "EDIPEM",
+    "release": 2020,
+    "collocation": "E4",
+    "position": 30,
+    "reserverd": false
+  },
+  {
+    "title": "Le vite de' più eccellenti pittori scultori e architettori",
+    "imagePath": "http://books.google.com/books/content?id=YMcDAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Giorgio Vasari"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1809,
+    "collocation": "E4",
+    "position": 31,
+    "reserverd": false
+  },
+  {
+    "title": "Teatro scelto - Didone abbandonata  - Demetrio - L'Olimpiade - Attilio Regolo",
+    "imagePath": "http://books.google.com/books/content?id=5ZAHAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Pietro Metastasio"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1968,
+    "collocation": "E4",
+    "position": 32,
+    "reserverd": false
+  },
+  {
+    "title": "dai Saggi critici",
+    "imagePath": "http://books.google.com/books/content?id=mErCMlQBtDwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Francesco De Sanctis"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1866,
+    "collocation": "E4",
+    "position": 33,
+    "reserverd": false
+  },
+  {
+    "title": "Poesie e prose scelte",
+    "imagePath": "http://books.google.com/books/content?id=4HFdAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "poesia"
+    ],
+    "authors": [
+      "Giovanni Pascoli"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 2002,
+    "collocation": "E4",
+    "position": 34,
+    "reserverd": false
+  },
+  {
+    "title": "Commedie La bottega del caffè - La Locandiera - I rusteghi - Le baruffe - il ventaglio",
+    "subtitle": "La bottega del caffè, La locandiera, I rusteghi, Le baruffe chiozzotte, Il ventaglio",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Carlo Goldoni"
+    ],
+    "language": "it",
+    "house": "EDIPEM",
+    "release": 1974,
+    "collocation": "E4",
+    "position": 35,
+    "reserverd": false
+  },
+  {
+    "title": "Il mondo della favola",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "EPIDEM",
+    "release": 2020,
+    "collocation": "E5",
+    "position": 3,
+    "reserverd": false
+  },
+  {
+    "title": "da Le mille e una notte racconti arabi raccolti da Galland",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Antoine Galland"
+    ],
+    "house": "EPIDEM",
+    "release": 2020,
+    "collocation": "E5",
+    "position": 4,
+    "reserverd": false
+  },
+  {
+    "title": "Dal Nilo all'Eufrate Lettura dell'Egitto dell'Assiria e di Babilonia",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "EPIDEM",
+    "release": 2020,
+    "collocation": "E5",
+    "position": 6,
+    "reserverd": false
+  },
+  {
+    "title": "Le grandi esperienze religiose",
+    "subtitle": "lineamenti di critica ierologica",
+    "imagePath": "http://books.google.com/books/content?id=X88nAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "religione"
+    ],
+    "authors": [
+      "Maurilio Adriani"
+    ],
+    "language": "it",
+    "house": "EPIDEM",
+    "release": 1988,
+    "collocation": "E5",
+    "position": 10,
+    "reserverd": false
+  },
+  {
+    "title": "I grandi utopisti",
+    "imagePath": "http://books.google.com/books/content?id=VuI9AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Maurilio Adriani"
+    ],
+    "language": "it",
+    "house": "EPIDEM",
+    "release": 1969,
+    "collocation": "E5",
+    "position": 11,
+    "reserverd": false
+  },
+  {
+    "title": "La figlia del capitano e altri racconti",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Aleksander Puskin"
+    ],
+    "house": "EPIDEM",
+    "release": 2020,
+    "collocation": "E5",
+    "position": 13,
+    "reserverd": false
+  },
+  {
+    "title": "Le avventure di Cicikov ovvero Le Anime morte",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Nikolaj Vasil'evic Googol"
+    ],
+    "language": "it",
+    "house": "EPIDEM",
+    "release": 1917,
+    "collocation": "E5",
+    "position": 15,
+    "reserverd": false
+  },
+  {
+    "title": "I grandi racconti russi",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV AA.VV"
+    ],
+    "house": "EPIDEM",
+    "release": 2020,
+    "collocation": "E5",
+    "position": 16,
+    "reserverd": false
+  },
+  {
+    "title": "I fratelli Karamazov (II)",
+    "subtitle": "romanzo in quattro parti e un epilogo : vol. 1 e 2",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Fedor Dostoevskij"
+    ],
+    "language": "it",
+    "house": "EPIDEM",
+    "release": 1929,
+    "collocation": "E5",
+    "position": 18,
+    "reserverd": false
+  },
+  {
+    "title": "Il villaggio di Stepancikovo - Netocka Nezvanova",
+    "subtitle": "romanzo umoristico",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Fedor Dostoevskij"
+    ],
+    "language": "it",
+    "house": "EPIDEM",
+    "release": 1927,
+    "collocation": "E5",
+    "position": 22,
+    "reserverd": false
+  },
+  {
+    "title": "L'armata a cavallo - Racconti di Odessa - Racconti vari editi e inediti",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Isaak Babel"
+    ],
+    "language": "it",
+    "house": "EPIDEM",
+    "release": 1964,
+    "collocation": "E5",
+    "position": 23,
+    "reserverd": false
+  },
+  {
+    "title": "Il defunto odia i pettegolezzi",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Serena Vitali"
+    ],
+    "house": "Adelphi",
+    "release": 2020,
+    "collocation": "A5",
+    "position": 12,
+    "reserverd": false
+  },
+  {
+    "title": "Vite istantanee",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Andres Neuman"
+    ],
+    "house": "SUR",
+    "release": 2020,
+    "collocation": "A5",
+    "position": 19,
+    "reserverd": false
+  },
+  {
+    "title": "Anatomia sensibile",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Andres Neuman"
+    ],
+    "house": "Sur",
+    "release": 2020,
+    "collocation": "A5",
+    "position": 20,
+    "reserverd": false
+  },
+  {
+    "title": "Parlare da soli",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Andres Neuman"
+    ],
+    "house": "Einaudi",
+    "release": 2020,
+    "collocation": "A5",
+    "position": 35,
+    "reserverd": false
+  },
+  {
+    "title": "A Mosca, a Mosca",
+    "imagePath": "http://books.google.com/books/content?id=kNVCAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Serena Vitale"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 2010,
+    "collocation": "A5",
+    "position": 43,
+    "reserverd": false
+  },
+  {
+    "title": "L'Orda - Quando gli albanesi eravamo noi",
+    "subtitle": "quando gli albanesi eravamo noi",
+    "imagePath": "http://books.google.com/books/content?id=-5COAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "description": "Nella ricostruzione di Gian Antonio Stella, ricca di fatti, personaggi, aneddoti, documenti, storie ignote o sconvolgenti, compare l'altra faccia della grande emigrazione italiana. Quella che meglio dovremmo conoscere proprio per capire, rispettare e amare ancora di più i nostri nonni, padri, madri e sorelle che partirono. Quella che abbiamo rimosso per ricordare solo gli \"zii d'America\" arricchiti e vincenti. Una scelta fatta per raccontare a noi stessi, in questi anni di confronto con le \"orde\" di immigrati in Italia e di montante xenofobia, che quando eravamo noi gli immigrati degli altri, eravamo \"diversi\". Eravamo più amati. Eravamo \"migliori\". Non è esattamente così.",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "Gian Antonio Stella"
+    ],
+    "language": "it",
+    "house": "Bur",
+    "release": 2002,
+    "collocation": "A1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "L'odore dei soldi",
+    "imagePath": "http://books.google.com/books/content?id=57SzAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "biografia"
+    ],
+    "authors": [
+      "Marco Travaglio"
+    ],
+    "language": "it",
+    "house": "Editori Riuniti",
+    "release": 2001,
+    "collocation": "A1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "L'Uomo Ragno (fumetto)",
+    "subtitle": "l'identità segreta",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Brian M. Bendis"
+    ],
+    "language": "it",
+    "house": "La Repubblica",
+    "release": 2004,
+    "collocation": "A1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Le cose che non facciamo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Andres Neuman"
+    ],
+    "house": "La Repubblica",
+    "release": 2020,
+    "collocation": "B5",
+    "position": 31,
+    "reserverd": false
+  },
+  {
+    "title": "Faximile - 49 riscritture di opere letterarie",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bur",
+    "release": 2020,
+    "collocation": "B5",
+    "position": 40,
+    "reserverd": false
+  },
+  {
+    "title": "Vestire gli ignudi - L'altro figlio - L'uomo dal fiore in bocca",
+    "subtitle": "L'altro figlio. L'uomo dal fiore in bocca. Con la cronologia della vita di Pirandello e dei suoi tempi",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Luigi Pirandello"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 1979,
+    "collocation": "C5",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "L'amica delle mogli - Non si sa come - Sogno (ma forse no)",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Luigi Pirandello"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 1979,
+    "collocation": "C5",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Questa sera si recita a soggetto - Troversi - Bellavita",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Luigi Pirandello"
+    ],
+    "language": "en",
+    "house": "Mondadori",
+    "release": 1979,
+    "collocation": "C5",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Ma non è una cosa seria - Il giuoco delle parti",
+    "subtitle": "commedia",
+    "imagePath": "http://books.google.com/books/content?id=5UP4W_YehXoC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Luigi Pirandello"
+    ],
+    "language": "it",
+    "house": "Mondadori",
+    "release": 1919,
+    "collocation": "C5",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Il grande cocomero",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Francesca Archibugi"
+    ],
+    "language": "it",
+    "house": "Archimede",
+    "release": 1993,
+    "collocation": "C5",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "L'alchimista",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Pulo Coelho"
+    ],
+    "house": "Bompiani",
+    "release": 2020,
+    "collocation": "C5",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Il Mare non bagna Napoli",
+    "imagePath": "http://books.google.com/books/content?id=wuAHAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Anna Maria Cortese"
+    ],
+    "language": "it",
+    "house": "Adelphi",
+    "release": 1979,
+    "collocation": "C5",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Quaderni di Serafino Gubbio Operatore",
+    "subtitle": "romanzo",
+    "imagePath": "http://books.google.com/books/content?id=nF4MAQAAIAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Luigi Pirandello"
+    ],
+    "language": "it",
+    "house": ";Mondadori",
+    "release": 1925,
+    "collocation": "C5",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Una questione privata - I venti tre giorni della città di Alba",
+    "subtitle": "I ventitre giorni della città di Alba",
+    "imagePath": "http://books.google.com/books/content?id=Tu0lAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "fiction"
+    ],
+    "authors": [
+      "Beppe Fenoglio"
+    ],
+    "language": "it",
+    "house": "Einaudi",
+    "release": 1990,
+    "collocation": "C5",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "La freccia azzurra",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Gianni Rodari"
+    ],
+    "language": "it",
+    "house": "Editori Riuniti",
+    "release": 2015,
+    "collocation": "C5",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Storia confidenziale della letteratura italiana",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Gianpaolo Dossena"
+    ],
+    "house": "Rizzoli",
+    "release": 2020,
+    "collocation": "E1",
+    "position": 2,
+    "reserverd": false
+  },
+  {
+    "title": "Gli ultimi giorni",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Raymand Queneau"
+    ],
+    "house": "Newton Compton",
+    "release": 2020,
+    "collocation": "E1",
+    "position": 3,
+    "reserverd": false
+  },
+  {
+    "title": "Il tamburo di latta",
+    "imagePath": "http://books.google.com/books/content?id=OiXpkHMmUFUC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Gunter Grass"
+    ],
+    "language": "en",
+    "house": "Feltrinelli",
+    "release": 1959,
+    "collocation": "E1",
+    "position": 5,
+    "reserverd": false
+  },
+  {
+    "title": "A tredici anni… Diario di un anno di scuola",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Roberta Fasanotti"
+    ],
+    "house": "Archimede",
+    "release": 2020,
+    "collocation": "E1",
+    "position": 13,
+    "reserverd": false
+  },
+  {
+    "title": "La peste scarlatta",
+    "subtitle": "romanzo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Jack London"
+    ],
+    "language": "it",
+    "house": "Adelphi",
+    "release": 1928,
+    "collocation": "E1",
+    "position": 23,
+    "reserverd": false
+  },
+  {
+    "title": "Decameron (I)",
+    "subtitle": "Riscontrato co' migliori testi e con note di P. Fanfani, E. Camerini ed altri",
+    "imagePath": "http://books.google.com/books/content?id=phN0nCZ89z8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Giovanni Boccaccio"
+    ],
+    "language": "it",
+    "house": "Fabbri editori",
+    "release": 1883,
+    "collocation": "E1",
+    "position": 30,
+    "reserverd": false
+  },
+  {
+    "title": "Decameron (II)",
+    "subtitle": "1",
+    "imagePath": "http://books.google.com/books/content?id=JHnmqdx_R5gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Giovanni Boccaccio"
+    ],
+    "language": "it",
+    "house": "Fabbri editori",
+    "release": 1803,
+    "collocation": "E1",
+    "position": 31,
+    "reserverd": false
+  },
+  {
+    "title": "Un assassino nelle tenebre",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Alfred Hitchcock"
+    ],
+    "house": "Mondadori",
+    "release": 2020,
+    "collocation": "E1",
+    "position": 32,
+    "reserverd": false
+  },
+  {
+    "title": "Come era verde la mia vallata",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "Roberto Llewellyn"
+    ],
+    "house": "Mondadori",
+    "release": 2020,
+    "collocation": "E1",
+    "position": 38,
+    "reserverd": false
+  },
+  {
+    "title": "L'amico ritrovato - Un'anima non vile - Niente resurrezione per favore",
+    "subtitle": "tratto dal romanzo di Fred Uhlman",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "categories": [
+      "Fiction"
+    ],
+    "authors": [
+      "Fred Uhlman"
+    ],
+    "language": "it",
+    "house": "Guanda",
+    "release": 2020,
+    "collocation": "C5",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Rossella",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Rossella",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Rossella",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Rossella",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Rossella",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Rossella",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Rossella",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Rossella",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Rossella",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Rossella",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Rossella",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Furore",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Furore",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Furore",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Furore",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Furore",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Furore",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Furore",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Furore",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Al bar \"Il Sindaco\"",
+    "imagePath": "http://books.google.com/books/content?id=EmGlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "Scritto a più mani, il volume è stato scritto a più mani e contiene le riflessioni di autori che vedono la realtà in modo critico, esprimendo posizioni divergenti rispetto alla maggioranza. I loro contributi sono raggruppati a seconda di alcuni temi unificanti: - Così' va in Italia - La società internazionale - La guerra in alcune sue manifestazioni - Le scienze sociali oggi . Sulla politica e sull'amministrazione pubblica - Infine parliamo di sesso.... - .... e di educazione. Il testo è scaricabile gratuitamente da QUI: http://www.edarcipelago.com/perop/immat/impimp.htm Si può trovare anche allegato a questa presentazione.",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "Bimed/scuola",
+    "release": 2018,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Al bar \"Il Sindaco\"",
+    "imagePath": "http://books.google.com/books/content?id=EmGlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "Scritto a più mani, il volume è stato scritto a più mani e contiene le riflessioni di autori che vedono la realtà in modo critico, esprimendo posizioni divergenti rispetto alla maggioranza. I loro contributi sono raggruppati a seconda di alcuni temi unificanti: - Così' va in Italia - La società internazionale - La guerra in alcune sue manifestazioni - Le scienze sociali oggi . Sulla politica e sull'amministrazione pubblica - Infine parliamo di sesso.... - .... e di educazione. Il testo è scaricabile gratuitamente da QUI: http://www.edarcipelago.com/perop/immat/impimp.htm Si può trovare anche allegato a questa presentazione.",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "Bimed/scuola",
+    "release": 2018,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Al bar \"Il Sindaco\"",
+    "imagePath": "http://books.google.com/books/content?id=EmGlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "Scritto a più mani, il volume è stato scritto a più mani e contiene le riflessioni di autori che vedono la realtà in modo critico, esprimendo posizioni divergenti rispetto alla maggioranza. I loro contributi sono raggruppati a seconda di alcuni temi unificanti: - Così' va in Italia - La società internazionale - La guerra in alcune sue manifestazioni - Le scienze sociali oggi . Sulla politica e sull'amministrazione pubblica - Infine parliamo di sesso.... - .... e di educazione. Il testo è scaricabile gratuitamente da QUI: http://www.edarcipelago.com/perop/immat/impimp.htm Si può trovare anche allegato a questa presentazione.",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "Bimed/scuola",
+    "release": 2018,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Al bar \"Il Sindaco\"",
+    "imagePath": "http://books.google.com/books/content?id=EmGlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "Scritto a più mani, il volume è stato scritto a più mani e contiene le riflessioni di autori che vedono la realtà in modo critico, esprimendo posizioni divergenti rispetto alla maggioranza. I loro contributi sono raggruppati a seconda di alcuni temi unificanti: - Così' va in Italia - La società internazionale - La guerra in alcune sue manifestazioni - Le scienze sociali oggi . Sulla politica e sull'amministrazione pubblica - Infine parliamo di sesso.... - .... e di educazione. Il testo è scaricabile gratuitamente da QUI: http://www.edarcipelago.com/perop/immat/impimp.htm Si può trovare anche allegato a questa presentazione.",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "Bimed/scuola",
+    "release": 2018,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Al bar \"Il Sindaco\"",
+    "imagePath": "http://books.google.com/books/content?id=EmGlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "Scritto a più mani, il volume è stato scritto a più mani e contiene le riflessioni di autori che vedono la realtà in modo critico, esprimendo posizioni divergenti rispetto alla maggioranza. I loro contributi sono raggruppati a seconda di alcuni temi unificanti: - Così' va in Italia - La società internazionale - La guerra in alcune sue manifestazioni - Le scienze sociali oggi . Sulla politica e sull'amministrazione pubblica - Infine parliamo di sesso.... - .... e di educazione. Il testo è scaricabile gratuitamente da QUI: http://www.edarcipelago.com/perop/immat/impimp.htm Si può trovare anche allegato a questa presentazione.",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "Bimed/scuola",
+    "release": 2018,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Al bar \"Il Sindaco\"",
+    "imagePath": "http://books.google.com/books/content?id=EmGlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "Scritto a più mani, il volume è stato scritto a più mani e contiene le riflessioni di autori che vedono la realtà in modo critico, esprimendo posizioni divergenti rispetto alla maggioranza. I loro contributi sono raggruppati a seconda di alcuni temi unificanti: - Così' va in Italia - La società internazionale - La guerra in alcune sue manifestazioni - Le scienze sociali oggi . Sulla politica e sull'amministrazione pubblica - Infine parliamo di sesso.... - .... e di educazione. Il testo è scaricabile gratuitamente da QUI: http://www.edarcipelago.com/perop/immat/impimp.htm Si può trovare anche allegato a questa presentazione.",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "Bimed/scuola",
+    "release": 2018,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Al bar \"Il Sindaco\"",
+    "imagePath": "http://books.google.com/books/content?id=EmGlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "Scritto a più mani, il volume è stato scritto a più mani e contiene le riflessioni di autori che vedono la realtà in modo critico, esprimendo posizioni divergenti rispetto alla maggioranza. I loro contributi sono raggruppati a seconda di alcuni temi unificanti: - Così' va in Italia - La società internazionale - La guerra in alcune sue manifestazioni - Le scienze sociali oggi . Sulla politica e sull'amministrazione pubblica - Infine parliamo di sesso.... - .... e di educazione. Il testo è scaricabile gratuitamente da QUI: http://www.edarcipelago.com/perop/immat/impimp.htm Si può trovare anche allegato a questa presentazione.",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "Bimed/scuola",
+    "release": 2018,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Al bar \"Il Sindaco\"",
+    "imagePath": "http://books.google.com/books/content?id=EmGlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "Scritto a più mani, il volume è stato scritto a più mani e contiene le riflessioni di autori che vedono la realtà in modo critico, esprimendo posizioni divergenti rispetto alla maggioranza. I loro contributi sono raggruppati a seconda di alcuni temi unificanti: - Così' va in Italia - La società internazionale - La guerra in alcune sue manifestazioni - Le scienze sociali oggi . Sulla politica e sull'amministrazione pubblica - Infine parliamo di sesso.... - .... e di educazione. Il testo è scaricabile gratuitamente da QUI: http://www.edarcipelago.com/perop/immat/impimp.htm Si può trovare anche allegato a questa presentazione.",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "Bimed/scuola",
+    "release": 2018,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Al bar \"Il Sindaco\"",
+    "imagePath": "http://books.google.com/books/content?id=EmGlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "isbn": "",
+    "description": "Scritto a più mani, il volume è stato scritto a più mani e contiene le riflessioni di autori che vedono la realtà in modo critico, esprimendo posizioni divergenti rispetto alla maggioranza. I loro contributi sono raggruppati a seconda di alcuni temi unificanti: - Così' va in Italia - La società internazionale - La guerra in alcune sue manifestazioni - Le scienze sociali oggi . Sulla politica e sull'amministrazione pubblica - Infine parliamo di sesso.... - .... e di educazione. Il testo è scaricabile gratuitamente da QUI: http://www.edarcipelago.com/perop/immat/impimp.htm Si può trovare anche allegato a questa presentazione.",
+    "categories": [
+      "scienze-sociali"
+    ],
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "language": "it",
+    "house": "Bimed/scuola",
+    "release": 2018,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "E tu? Da che parte Stai?",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "E tu? Da che parte Stai?",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "E tu? Da che parte Stai?",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "E tu? Da che parte Stai?",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "E tu? Da che parte Stai?",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Posta per te",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "La rosa nel deserto",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Il giovane chirurgo",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  },
+  {
+    "title": "Cronache dal Paradiso",
+    "imagePath": "https://via.placeholder.com/128x192.png?text=No+Cover",
+    "isbn": "",
+    "authors": [
+      "AA.VV. AA.VV."
+    ],
+    "house": "Bimed/scuola",
+    "release": 2020,
+    "collocation": "C1",
+    "position": 0,
+    "reserverd": false
+  }
+]

@@ -1,0 +1,128 @@
+﻿@model Librelia.DTO.AuthUserDTO
+
+@{
+    ViewData["Title"] = "Login";
+    
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                        <i class="bi bi-person-circle text-primary display-1"></i>
+                        <h2 class="mt-3 mb-1">Accedi</h2>
+                        <p class="text-muted">Accedi al tuo account per gestire i prestiti</p>
+                    </div>
+                    <!-- Login Form -->
+                    <form method="post" asp-controller="Auth" asp-action="Login" novalidate>
+                        @Html.AntiForgeryToken()
+
+                        <!-- Email Field -->
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email</label>
+                            <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-person"></i></span>
+                            <input type="email" asp-for="Email" class="form-control" id="Email" placeholder="Inserisci email" required />
+                            </div>
+                            <span asp-validation-for="Email" class="text-danger">@(ViewData["ErrorEmail"] != null ? ViewData["ErrorEmail"] : "")</span>
+                        </div>
+
+                        <!-- Password Field -->
+                        <div class="mb-3">
+                            <label for="Password" class="form-label">Password</label>
+                            <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                            <input type="password" asp-for="Password" class="form-control" id="Password" placeholder="Inserisci password" required />
+                            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                <i class="bi bi-eye"></i>
+                            </button>                           
+                            </div>
+                            <span asp-validation-for="Password" class="text-danger">@(ViewData["ErrorPassword"] != null ? ViewData["ErrorPassword"] : "" )</span>
+                        </div>
+
+                        <!-- Remember Me -->
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <div class="form-check">
+                                <input asp-for="RememberMe" class="form-check-input" type="checkbox"  id="RememberMe" />
+                                <label class="form-check-label" for="RememberMe">
+                                    Ricordami
+                                </label>
+                            </div>
+                            <a asp-controller="Auth" asp-action="PasswordDimenticata" class="text-primary text-decoration-none">Password dimenticata?</a>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary w-100 py-2 mb-4">
+                            <i class="bi bi-box-arrow-in-right me-2"></i>Accedi
+                        </button>
+
+                        <!-- Register Link -->
+                        <div class="text-center">
+                            <p class="mb-0">Non hai un account? <a asp-controller="Auth"  asp-action="Registrazione" class="text-primary">Registrati</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const togglePasswordBtn = document.getElementById('togglePassword');
+            const passwordInput = document.getElementById('Password');
+
+            if (togglePasswordBtn) {
+                togglePasswordBtn.addEventListener('click', function (e) {
+                    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                    passwordInput.setAttribute('type', type);
+
+                    // Toggle eye icon
+                    const eyeIcon = togglePasswordBtn.querySelector('i');
+                    if (eyeIcon) {
+                      eyeIcon.classList.toggle('bi-eye');
+                      eyeIcon.classList.toggle('bi-eye-slash');
+                    }
+                });
+            }
+        });
+    </script>
+}
+
+<style>
+    .card {
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .form-control:focus, .btn:focus {
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    .invalid-feedback {
+      font-size: 0.875rem;
+    }
+
+    .alert {
+      border-radius: 8px;
+    }
+
+    .btn-primary {
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .alert-info {
+      cursor: pointer;
+    }
+</style>

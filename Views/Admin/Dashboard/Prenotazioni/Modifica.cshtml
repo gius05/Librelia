@@ -1,0 +1,160 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Modifica Utente";
+
+    var roles = new Dictionary<string, string>
+  {
+    { "Docente", "docente" },
+    { "Studente", "studente" },
+    { "Personale ATA", "ata" },
+    { "Admin", "admin" }
+  };
+ //   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css" integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.min.css" integrity="sha512-aQb0/doxDGrw/OC7drNaJQkIKFu6eSWnVMAwPN64p6sZKeJ4QCDYL42Rumw2ZtL8DB9f66q4CnLIUnAw28dEbg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+}
+@model  ReservationModifyModel
+
+<h1 class="text-center mb-4">Modifica Utente</h1>
+
+<form asp-controller="Admin" asp-action="ModificaPrenotazione" method="post" class="needs-validation" novalidate>
+    <div class="row g-4 ">
+        <input type="hidden" asp-for="Id" class="form-control" value="@Model.Id" readonly>
+
+
+        <div class="col-12 col-md-6">
+            <label for="status" class="form-label">Stato</label>
+            <select class="form-select" id="status" name="status" aria-label="Stato">
+                @if (Model.Status == "consegnato")
+                {
+                    <option value="consegnato" selected="">Consegnato</option>
+                    <option value="prenotato">Prenotato</option>
+                    <option value="scaduto">Scaduto</option>
+                }
+                else if (Model.Status == "prenotato")
+                {
+                    <option value="consegnato">Consegnato</option>
+                    <option value="prenotato"selected>Prenotato</option>
+                    <option value="scaduto">Scaduto</option>
+                }
+                else
+                {
+                    <option value="consegnato">Consegnato</option>
+                    <option value="prenotato">Prenotato</option>
+                    <option value="scaduto" selected>Scaduto</option>
+                }
+            </select>
+
+        </div>
+
+        <div class="col-12 col-md-6">
+            <label for="isbn" class="form-label">ISBN</label>
+            <input asp-for="ISBN"
+                   type="text"
+                   class="form-control"
+                   id="isbn"
+                   name="isbn"
+                   required
+                   aria-label="ISBN"
+                   value=@Model.ISBN
+                   readonly>
+            <div class="invalid-feedback">
+                Perfavore inserisci ISBN
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <label for="title" class="form-label">Titolo</label>
+            <input asp-for="Title"
+                   type="text"
+                   class="form-control"
+                   id="title"
+                   name="title"
+                   required
+                   aria-label="Titolo libro"
+                   value=@Model.Title
+                   readonly>
+            <div class="invalid-feedback">
+                Perfavore inserisci il titolo
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <label for="name" class="form-label">Email</label>
+            <input asp-for="Email"
+                   type="email"
+                   class="form-control"
+                   id="name"
+                   name="email"
+                   required
+                   aria-label="email"
+                   value=@Model.Email
+                   readonly>
+            <div class="invalid-feedback">
+                Perfavore inserisci il nome
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <label for="register_date" class="form-label">Data Prenotazione</label>
+            <input asp-for="RegisterDate"
+                   type="text"
+                   class="form-control"
+                   id="register_date"
+                   name="register_date"
+                   required
+                   value="@Model.RegisterDate.ToString("dd/MM/yyyy")"
+                   readonly>
+            <div class="invalid-feedback">
+                Perfavore inserisci Data registrazione
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <label for="datepicker" class="form-label">Data Scadenza</label>
+
+            <input type="text"
+                   class="form-control"
+                   id="datepicker"
+                   value="@Model.ExpireDate.ToString("dd/MM/yyyy")"
+                   required />
+
+
+            <input type="hidden" asp-for="ExpireDate" id="ExpireDate" />
+            <div class="invalid-feedback">
+                Perfavore inserisci Data Scadenza
+            </div>
+        </div>
+    </div>
+
+            <div class="col-12 my-4">
+                <button type="submit" class="btn btn-primary w-100">
+                    Modifica
+                </button>
+            </div>
+</form>
+
+@section Scripts
+{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js" integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/locales/bootstrap-datepicker.it.min.js" integrity="sha512-0MThRHKyDbl5nH553hVBJMo2Ma7c2c5jU2bENv92XM2SVQEcQ7vepANdKiU7DLiYH9RsqESRdDpCRVkIRGtKGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/js/datepicker.js"></script>
+}
+<script>
+    // Form validation script
+    document.addEventListener('DOMContentLoaded', function () {
+      const forms = document.querySelectorAll('.needs-validation');
+
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+
+          form.classList.add('was-validated');
+        }, false);
+      });
+    });
+
+</script>
+

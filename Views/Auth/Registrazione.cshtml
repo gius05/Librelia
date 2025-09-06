@@ -1,0 +1,230 @@
+﻿@model RegisterViewModel
+@{
+    ViewBag.Title = "Registrazione";
+    
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                        <i class="bi bi-person-plus-fill text-primary display-1"></i>
+                        <h2 class="mt-3 mb-1">Registrazione</h2>
+                        <p class="text-muted">Crea un account per accedere a tutti i servizi della biblioteca</p>
+                    </div>
+
+                    <!-- Registration Form -->
+                    <form asp-controller="Auth" asp-action="Registrazione" method="post" id="registrationForm" class="needs-validation" novalidate>
+                        <!-- Success Alert -->
+                        <div class="alert alert-success d-none" id="registrationSuccess" role="alert">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            Registrazione completata con successo! Verrai reindirizzato alla pagina di login...
+                        </div>
+                        @if (ViewData["Error"] != null)
+                        {
+                            <!-- Error Alert -->
+                            <div class="alert alert-danger" id="registrationError" role="alert">
+                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                <span id="registrationErrorMessage">@ViewData["Error"]</span>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-danger d-none" id="registrationError" role="alert">
+                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                <span id="registrationErrorMessage">Si è verificato un errore durante la registrazione.</span>
+                            </div>
+                        }
+
+                        <!-- Name Fields -->
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="firstName" class="form-label">Nome</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                    <input asp-for="Name" type="text" class="form-control" id="Name" placeholder="Inserisci il tuo nome" required>
+                                    <div class="invalid-feedback">
+                                        Inserisci il tuo nome.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Cognome</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                    <input asp-for="Surname" type="text" class="form-control" id="Surname" placeholder="Inserisci il tuo cognome" required>
+                                    <div class="invalid-feedback">
+                                        Inserisci il tuo cognome.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Role Fields -->
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <label for="role" class="form-label">Ruolo</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-building"></i></span>
+                                    <select asp-for="Role" id="Role" name="Role" class="form-select" required>
+                                        <option value="" disabled selected hidden>Scegli il tuo Ruolo</option>
+                                        <option value="studente">Studente</option>
+                                        <option value="docente">Docente</option>
+                                        <option value="ata">Personale ATA</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Scegli un ruolo.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="isExternal" class="form-label">Posizione</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-bullseye"></i></span>
+                                    <select asp-for="IsExternal" id="IsExternal" name="IsExternal" class="form-select" required>
+                                        <option value="" disabled selected hidden>Scegli la tua Posizione</option>
+                                        <option value="true">Esterno</option>
+                                        <option value="false">Interno</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Devi scegliere la tua posizione.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                <input asp-for="Email" type="Email" class="form-control" id="Email" placeholder="Inserisci la tua email" required>
+                                <div class="invalid-feedback">
+                                    Inserisci un indirizzo email valido.
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Password Field -->
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                <input asp-for="Password" type="password" class="form-control" id="Password" placeholder="Crea una password" required>
+                                <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                                <div class="invalid-feedback">
+                                    La password non soddisfa i requisiti.
+                                </div>
+                            </div>
+
+                            <!-- Password Strength Indicator -->
+                            <div id="passwordStrength" class="mt-2">
+                                <div class="progress mb-2">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                                </div>
+                                <div class="d-flex flex-wrap gap-3 small">
+                                    <span id="lengthCheck" class="text-muted"><i class="bi bi-check-circle me-1"></i>Almeno 8 caratteri</span>
+                                    <span id="uppercaseCheck" class="text-muted"><i class="bi bi-check-circle me-1"></i>Una lettera maiuscola</span>
+                                    <span id="numberCheck" class="text-muted"><i class="bi bi-check-circle me-1"></i>Un numero</span>
+                                    <span id="specialCheck" class="text-muted"><i class="bi bi-check-circle me-1"></i>Un carattere speciale</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Confirm Password Field -->
+                        <div class="mb-4">
+                            <label for="confirmPassword" class="form-label">Conferma Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                                <input asp-for="ConfirmPassword" type="password" class="form-control" id="ConfirmPassword" placeholder="Conferma la tua password" required>
+                                <div class="invalid-feedback">
+                                    Le password non corrispondono.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                                <label class="form-check-label" for="termsCheck">
+                                    Accetto i <a asp-controller="Home" asp-action="Termini" class="text-primary">Termini e Condizioni</a> e la <a asp-controller="Home" asp-action="Privacy" class="text-primary">Privacy Policy</a>
+                                </label>
+                                <div class="invalid-feedback">
+                                    Devi accettare i termini e condizioni per continuare.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary w-100 py-2 mb-4">
+                            <i class="bi bi-person-plus me-2"></i>Registrati
+                        </button>
+
+                        <!-- Login Link -->
+                        <div class="text-center">
+                            <p class="mb-0">Hai già un account? <a asp-controller="Auth" asp-action="Login" class="text-primary">Accedi</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="~/js/register.js"></script>
+
+<style>
+    .card {
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .form-control:focus, .btn:focus {
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    .invalid-feedback {
+        font-size: 0.875rem;
+    }
+
+    .alert {
+        border-radius: 8px;
+    }
+
+    .btn-primary {
+        transition: all 0.3s;
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    /* Password strength styles */
+    #passwordStrength .progress {
+        border-radius: 10px;
+    }
+
+    #passwordStrength .progress-bar {
+        transition: width 0.3s ease;
+    }
+
+    .text-success {
+        color: #198754 !important;
+    }
+</style>

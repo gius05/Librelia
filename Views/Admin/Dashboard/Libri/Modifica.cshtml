@@ -1,0 +1,149 @@
+﻿@using Librelia.Utility
+@model Book
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Modifica Libro";
+
+
+
+}
+
+<h1 class="text-center mb-4">Modifica Libro</h1>
+
+<form asp-action="ModificaLibro" method="post" class="needs-validation" novalidate>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <label asp-for="Title" class="form-label">Titolo</label>
+            <input asp-for="Title" class="form-control" required />
+            <div class="invalid-feedback">Inserisci il titolo</div>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Subtitle" class="form-label">Sottotitolo (Opzionale)</label>
+            <input asp-for="Subtitle" class="form-control"/>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Isbn" class="form-label">ISBN</label>
+            <input type="text" asp-for="Isbn" class="form-control" required />
+            <div class="invalid-feedback">Inserisci l'ISBN</div>
+
+        </div>
+
+
+
+        <div class="col-md-6">
+            <label asp-for="ImagePath" class="form-label">Immagine di Copertina (URL)</label>
+            <input asp-for="ImagePath" class="form-control" required/>
+            <div class="invalid-feedback">Inserisci l'url</div>
+
+        </div>
+
+        <div class="col-12">
+            <label asp-for="Description" class="form-label">Descrizione (Opzionale)</label>
+            <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Release" class="form-label">Anno di Rilascio</label>
+            <input asp-for="Release" class="form-control" required/>
+            <div class="invalid-feedback">Inserisci l'anno</div>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Language" class="form-label">Lingua</label>
+            <input asp-for="Language" class="form-control" required/>
+            <div class="invalid-feedback">Inserisci la lingua</div>
+        </div>
+        <div class="col-md-6 form-group">
+            <label for="authorSelect">Autore/i</label>
+            <select id="authorSelect" asp-for="Authors" asp-items="@(await Tools.ToSelectListItems(Model.Authors))" class="form-control" multiple required>
+            </select>
+            <div class="invalid-feedback">Inserisci gli autori</div>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="House" class="form-label">Casa Editrice</label>
+            <input asp-for="House" class="form-control" required/>
+            <div class="invalid-feedback">Inserisci l'editore</div>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Collocation" class="form-label">Collocazione</label>
+            <input asp-for="Collocation" class="form-control" required/>
+            <div class="invalid-feedback">Inserisci la collocazione</div>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Position" class="form-label">Posizione</label>
+            <input asp-for="Position" class="form-control" required/>
+            <div class="invalid-feedback">Inserisci la posizione</div>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Categories" class="form-label">Categorie</label>
+            <select id="categoriesSelect" asp-for="Categories" asp-items="Librelia.Database.StaticValues.categoryList" class="form-select" multiple required></select>            
+            <div class="invalid-feedback">Inserisci le categorie</div>
+        </div>
+
+        <input type="hidden" asp-for="CreatedAt" />
+        <input type="hidden" asp-for="UpdatedAt" />
+        <input type="hidden" asp-for="Reserved" />
+
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100">Salva Modifiche</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+    <script type="text/javascript">
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+        
+        
+                $(document).ready(function () {
+        
+                    $('#categoriesSelect').select2({
+                        placeholder: "Seleziona una o più categorie...",
+                        allowClear: true,
+                        width: '100%'  // Stesso per le categorie
+                    });
+                    $('#authorSelect').select2({
+                        placeholder: "Scrivi uno o più autori...",
+                        tags: true, // permette di scrivere nuovi valori
+                        width: '100%',
+                        tokenSeparators: [','], // separa autori digitati con virgola
+                        createTag: function (params) {
+                            let term = $.trim(params.term);
+                            if (term === '') {
+                                return null;
+                            }
+                            return {
+                                id: term,
+                                text: term,
+                                newTag: true
+                            };
+                        }
+                    });
+                });
+    </script>
+
+}
+

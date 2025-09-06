@@ -1,0 +1,218 @@
+﻿@{
+    ViewData["ActivePage"] = "Contatti";
+
+    ViewData["Title"] = "Contatti";
+    
+}
+ <!-- Hero Section -->
+<section class="bg-light py-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-4">Contatti</h1>
+                <p class="lead mb-0">Siamo qui per aiutarti. Contattaci per qualsiasi informazione o richiesta.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Info Section -->
+<section class="container mb-5">
+    <div class="row g-4">
+        <!-- Contact Card 1 -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center p-4">
+                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                        <i class="bi bi-geo-alt fs-1"></i>
+                    </div>
+                    <h4>Indirizzo</h4>
+                    <p class="mb-0">Via Annunziatella, 55/c<br>80053 Castellammare di Stabia NA, Italia</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Card 2 -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center p-4">
+                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                        <i class="bi bi-telephone fs-1"></i>
+                    </div>
+                    <h4>Telefono</h4>
+                    <p class="mb-0">Tel: 081 8717985<br>Fax: 08 18723657</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact Card 3 -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body text-center p-4">
+                    <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto mb-4" style="width: 80px; height: 80px;">
+                        <i class="bi bi-envelope fs-1"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p class="mb-0">natf10000d@istruzione.it<br>natf10000d@istruzione.it</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map and Form Section -->
+<section class="container mb-5">
+    <div class="row g-4">
+        <!-- Map -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body p-0">
+                    <div class="ratio ratio-4x3">
+                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBpiGf-qNlzyMrRhEbxO8mZG5QvHYHvd2c&q=I.T.I.+Renato+Elia+Via+Annunziatella,+55/c,+80053+&zoom=17&maptype=roadmap" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="p-4">
+                        <h5>Come Raggiungerci</h5>
+                        <p class="text-muted mb-0">La biblioteca è facilmente raggiungibile con i mezzi pubblici. Ci troviamo a Castellammare di Stabia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body p-4">
+                    <h3 class="card-title mb-4">Inviaci un messaggio</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome e Cognome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Inserisci il tuo nome e cognome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Inserisci la tua email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Oggetto</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Oggetto del messaggio">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Messaggio</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Scrivi il tuo messaggio qui..." required></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="privacy" required>
+                            <label class="form-check-label" for="privacy">
+                                Acconsento al trattamento dei dati personali secondo la normativa sulla privacy
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Opening Hours Section -->
+<section class="bg-light py-5 mb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="mb-4">Orari di Apertura</h2>
+                <p class="lead mb-5">Siamo aperti tutti i giorni tranne la domenica</p>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3">Lunedì - Venerdì</h5>
+                                <p class="card-text fs-5 mb-0">9:00 - 19:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3">Sabato</h5>
+                                <p class="card-text fs-5 mb-0">9:00 - 13:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 text-muted">
+                    <p>Nota: Durante le festività nazionali la biblioteca potrebbe osservare orari speciali o rimanere chiusa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="container mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h2 class="text-center mb-4">Domande Frequenti</h2>
+
+            <div class="accordion" id="faqAccordion">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item border-0 mb-3 shadow-sm">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Come posso iscrivermi alla biblioteca?
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Per iscriverti alla biblioteca, utilizza l'email scolastica se sei uno studente o un'email qualsiasi nel caso tu sia un esterno. L'iscrizione è gratuita e ti permette di prendere in prestito fino a 5 libri contemporaneamente. Dovrai aspettare che un Admin approvi la tua iscrizione.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item border-0 mb-3 shadow-sm">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Per quanto tempo posso tenere i libri in prestito?
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I libri possono essere tenuti in prestito per 30 giorni. È possibile rinnovare il prestito per altri 15 giorni, a condizione che il libro non sia stato prenotato da un altro utente e che uno dei docenti responsabili sia stato avviasato. Il rinnovo può essere effettuato di persona.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item border-0 mb-3 shadow-sm">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Ci sono postazioni computer disponibili?
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            No, la biblioteca non dispone postazioni computer con accesso a internet.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item border-0 mb-3 shadow-sm">
+                    <h3 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Come posso proporre l'acquisto di un libro?
+                        </button>
+                    </h3>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Puoi suggerire l'acquisto di un libro compilando l'apposito modulo disponibile presso la reception o nella sezione "Suggerisci un libro" del nostro sito web. Le proposte vengono valutate mensilmente dal comitato acquisizioni.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
